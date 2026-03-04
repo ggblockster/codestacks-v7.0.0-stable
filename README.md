@@ -2,7 +2,7 @@
 Check out or download the files for the site.
 <br>
 <a href="https://codestacks.net">Visit the site</a>
-<br>
+<br><br>
 Some Python code:
 ```python
 def sum(a, b):
