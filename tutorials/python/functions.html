@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeStacks - Python Functions</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/code/prism.css">
+    <link rel="shortcut icon" href="/img/icon-f.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=warning" />
+</head>
+<body>
+    <ul class='navbar'>
+    <li class='uri'>
+    <a href='/index.html'
+    ><img
+    src='/img/icon-t.png'
+    alt=''
+    class='site-icon'
+    /></a>
+    <a>CodeStacks</a>
+    </li>
+    <li>
+    <a href='/index.html'><b>Home</b></a>
+    </li>
+    <li><a href='/index.html#tutorials'>Tutorials</a></li>
+    <li><a href='/index.html#about'>About</a></li>
+    </ul>
+
+<div class="overlay">
+        <div id="table">
+            <button id="closeBar" class="material-icons">
+                close
+            </button>
+            <h1>Python</h1>
+            <div id="scroll">
+            <h3>Basic Python</h3>
+            <ul>
+                <li data-go="/tutorials/python.html">Introduction</li>
+                <li data-go="/tutorials/python/basicsyntax.html">Basic Syntax</li>
+                <li data-go="/tutorials/python/operators.html">Operators</li>
+                <li data-go="/tutorials/python/variables.html">Variables</li>
+                <li data-go="/tutorials/python/comments.html">Comments</li>
+                <li data-go="/tutorials/python/ifelsestatements.html">If/Else Statements</li>
+                <li data-go="/tutorials/python/loops.html">Loops</li>
+                <li data-go="/tutorials/python/functions.html">Functions</li>
+                <li data-go="/tutorials/python/arrays.html">Arrays</li>
+                <li data-go="/tutorials/python/libraries.html">Libraries</li>
+                <li data-go="/tutorials/python/colours.html">Colours</li>
+                <li data-go="/tutorials/python/dictionaries.html">Dictionaries</li>
+                <li data-go="/tutorials/python/enums.html">Enumerators</li>
+                <li data-go="/tutorials/python/classes.html">Classes</li>
+                <li data-go="/tutorials/python/exceptions.html">Exception Handling</li>
+                <li data-go="/tutorials/python/filereading.html">File I/O Reading</li>
+            </ul>
+            <h3>Pygame</h3>
+            <ul>
+                <li data-go="/tutorials/python/pygame/setup.html">Setting Up</li>
+                <li data-go="/tutorials/python/pygame/window.html">Window</li>
+                <li data-go="/tutorials/python/pygame/images.html">Images</li>
+                <li data-go="/tutorials/python/pygame/text.html">Text</li>
+                <li data-go="/tutorials/python/pygame/k-input.html">Keyboard Input</li>
+                <li data-go="/tutorials/python/pygame/collision.html">Collision</li>
+            </ul>
+            </div>
+        </div>
+
+        <button id="openTable"
+        class="material-icons">
+            arrow_right
+        </button>
+    </div>
+
+<div id="screen">
+<div id="table2">
+        <h1>Python</h1>
+        <div id="scroll2">
+        <h3>Basic Python</h3>
+        <ul>
+            <li data-go="/tutorials/python.html">Introduction</li>
+            <li data-go="/tutorials/python/basicsyntax.html">Basic Syntax</li>
+            <li data-go="/tutorials/python/operators.html">Operators</li>
+            <li data-go="/tutorials/python/variables.html">Variables</li>
+            <li data-go="/tutorials/python/comments.html">Comments</li>
+            <li data-go="/tutorials/python/ifelsestatements.html">If/Else Statements</li>
+            <li data-go="/tutorials/python/loops.html">Loops</li>
+            <li data-go="/tutorials/python/functions.html">Functions</li>
+            <li data-go="/tutorials/python/arrays.html">Arrays</li>
+            <li data-go="/tutorials/python/libraries.html">Libraries</li>
+            <li data-go="/tutorials/python/colours.html">Colours</li>
+            <li data-go="/tutorials/python/dictionaries.html">Dictionaries</li>
+            <li data-go="/tutorials/python/enums.html">Enumerators</li>
+            <li data-go="/tutorials/python/classes.html">Classes</li>
+            <li data-go="/tutorials/python/exceptions.html">Exception Handling</li>
+            <li data-go="/tutorials/python/filereading.html">File I/O Reading</li>
+        </ul>
+        <h3>Pygame</h3>
+        <ul>
+            <li data-go="/tutorials/python/pygame/setup.html">Setting Up</li>
+            <li data-go="/tutorials/python/pygame/window.html">Window</li>
+            <li data-go="/tutorials/python/pygame/images.html">Images</li>
+            <li data-go="/tutorials/python/pygame/text.html">Text</li>
+            <li data-go="/tutorials/python/pygame/k-input.html">Keyboard Input</li>
+            <li data-go="/tutorials/python/pygame/collision.html">Collision</li>
+        </ul>
+        </div>
+        </div>
+    <div>
+    <div id="content">
+    <!-- banner -->
+    <div id="banner">
+        <div id="btext">
+            <img src="/img/icon-t.png" alt="">
+            <div>
+                <h1>Functions</h1>
+                <p>CodeStacks - Python</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section">
+        <h1>Abstract</h1>
+        <p>
+            Functions in Python are really 
+            useful, just like loops. Instead 
+            of writing certain segments of 
+            the same code repeatedly in a 
+            row, what if you wanted to re-use 
+            the same code in different parts 
+            of your code? Well, the easy 
+            solution is functions. Theres a 
+            way to define them and to use 
+            them, and you won't ever need 
+            to write a specific segment of 
+            code multiple times when you 
+            can just write it once and 
+            attach it to a function.
+        </p>
+    </div>
+
+    <div class="section">
+        <h1>Overview</h1>
+        <p>
+            Functions is Python are structured 
+            in a specific way. You need to 
+            have the defining keyword, 
+            <c>def</c>, the name of the 
+            function, and then that's 
+            directly followed by brackets, 
+            opened and closed, then a colon. 
+            What goes into the brackets? 
+            Well, those are called parameters. 
+            Parameters are values you can 
+            input into the function when you 
+            call on it, and you can then treat 
+            those as variables within the 
+            function.
+            <br><br>
+            An important part of using functions 
+            (with syntax) is having an indent 
+            to put your code in, otherwise it 
+            won't count as part of the function. 
+            Here's a basic example of a 
+            function in Python:
+        </p>
+
+<pre><code class="lang-python">def add(num1, num2):
+    result = num1 + num2
+    return result
+
+print(add(3,5)) # Outputs 8.
+</code></pre>
+    </div>
+
+    <div class="section">
+        <h1>Returning Values</h1>
+        <p>
+            Now that we know how to use 
+            parameters and functions, 
+            how do we output values based 
+            on those parameters? Well the 
+            solution is the <c>return</c> keyword. 
+            Anything after the keyword 
+            (it has to follow Python syntax 
+            to avoid errors), and also not 
+            a comment, will be outputted 
+            in place of the original calling 
+            of the function. 
+            <br><br>
+            Let's look at a similar example 
+            to the one before, but looking 
+            at the <c>return</c> keyword.
+        </p>
+<pre><code class="language-python"># Example:
+def multiply(num1, num2):
+    result = num1 * num2
+    return result
+
+print(multiply(3,5))
+</code></pre>
+
+    <p>
+        This time, we multiply the 
+        parameters. But look &mdash; notice the 
+        return keyword? The item after the 
+        keyword is the name of a variable, 
+        the result variable. The variable 
+        holds the product of the two 
+        parameters.
+    </p>
+    </div>
+
+    <div class="section">
+        <h1>Function Names</h1>
+        <p>
+            There are a couple of rules 
+            toward naming functions. They 
+            must start with a letter or an 
+            underscore.
+
+            <ul>
+                <li>They can only 
+                    start with letters or underscores.
+                </li>
+                <li>
+                    They can contain letters, numbers,
+                    or underscores.
+                </li>
+                <li>They are case-sensitive. 
+                    That means <c>myfunction()</c> 
+                    and <c>myFunction()</c> are 
+                    considered different.
+                </li>
+            </ul>
+        </p>
+    </div>
+
+    <div class="section">
+        <h1>Passing</h1>
+        <p>
+            If there is a case in which 
+            you need to create a function, 
+            but you don't need to use it yet, 
+            you can use the <c>pass</c> 
+            statement. You can place it 
+            inside empty functions, effectively 
+            safelocking them from turning into 
+            syntax errors.
+        </p>
+
+<pre><code class="lang-python"># Empty Function Example:
+def myFunction():
+    pass
+
+myFunction() # Returns nothing.
+</code></pre>
+
+    <p>
+        The <c>pass</c> function is particularly 
+        useful when you'd prefer to build the 
+        inner structure <i>before</i> implementing 
+        the function itself.
+    </p>
+    </div>
+    <!-- footer -->
+    <div class="section">
+        <h2>CodeStacks.</h2>
+        <p>
+            Learn to code. 
+            <br>
+            &copy CodeStacks, 2025-<span id="year">20XX</span>.
+            <br>
+            All Rights Reserved.
+        </p>
+    </div>
+    </div>
+    </div>
+</div>
+</body>
+<script src="/index.js"></script>
+<script src="/code/prism.js"></script>
+</html>

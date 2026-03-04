@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeStacks - Python Colours</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/code/prism.css">
+    <link rel="shortcut icon" href="/img/icon-f.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=warning" />
+</head>
+<body>
+    <ul class='navbar'>
+    <li class='uri'>
+    <a href='/index.html'
+    ><img
+    src='/img/icon-t.png'
+    alt=''
+    class='site-icon'
+    /></a>
+    <a>CodeStacks</a>
+    </li>
+    <li>
+    <a href='/index.html'><b>Home</b></a>
+    </li>
+    <li><a href='/index.html#tutorials'>Tutorials</a></li>
+    <li><a href='/index.html#about'>About</a></li>
+    </ul>
+
+<div class="overlay">
+        <div id="table">
+            <button id="closeBar" class="material-icons">
+                close
+            </button>
+            <h1>Python</h1>
+            <div id="scroll">
+            <h3>Basic Python</h3>
+            <ul>
+                <li data-go="/tutorials/python.html">Introduction</li>
+                <li data-go="/tutorials/python/basicsyntax.html">Basic Syntax</li>
+                <li data-go="/tutorials/python/operators.html">Operators</li>
+                <li data-go="/tutorials/python/variables.html">Variables</li>
+                <li data-go="/tutorials/python/comments.html">Comments</li>
+                <li data-go="/tutorials/python/ifelsestatements.html">If/Else Statements</li>
+                <li data-go="/tutorials/python/loops.html">Loops</li>
+                <li data-go="/tutorials/python/functions.html">Functions</li>
+                <li data-go="/tutorials/python/arrays.html">Arrays</li>
+                <li data-go="/tutorials/python/libraries.html">Libraries</li>
+                <li data-go="/tutorials/python/colours.html">Colours</li>
+                <li data-go="/tutorials/python/dictionaries.html">Dictionaries</li>
+                <li data-go="/tutorials/python/enums.html">Enumerators</li>
+                <li data-go="/tutorials/python/classes.html">Classes</li>
+                <li data-go="/tutorials/python/exceptions.html">Exception Handling</li>
+                <li data-go="/tutorials/python/filereading.html">File I/O Reading</li>
+            </ul>
+            <h3>Pygame</h3>
+            <ul>
+                <li data-go="/tutorials/python/pygame/setup.html">Setting Up</li>
+                <li data-go="/tutorials/python/pygame/window.html">Window</li>
+                <li data-go="/tutorials/python/pygame/images.html">Images</li>
+                <li data-go="/tutorials/python/pygame/text.html">Text</li>
+                <li data-go="/tutorials/python/pygame/k-input.html">Keyboard Input</li>
+                <li data-go="/tutorials/python/pygame/collision.html">Collision</li>
+            </ul>
+            </div>
+        </div>
+
+        <button id="openTable"
+        class="material-icons">
+            arrow_right
+        </button>
+    </div>
+
+<div id="screen">
+<div id="table2">
+        <h1>Python</h1>
+        <div id="scroll2">
+        <h3>Basic Python</h3>
+        <ul>
+            <li data-go="/tutorials/python.html">Introduction</li>
+            <li data-go="/tutorials/python/basicsyntax.html">Basic Syntax</li>
+            <li data-go="/tutorials/python/operators.html">Operators</li>
+            <li data-go="/tutorials/python/variables.html">Variables</li>
+            <li data-go="/tutorials/python/comments.html">Comments</li>
+            <li data-go="/tutorials/python/ifelsestatements.html">If/Else Statements</li>
+            <li data-go="/tutorials/python/loops.html">Loops</li>
+            <li data-go="/tutorials/python/functions.html">Functions</li>
+            <li data-go="/tutorials/python/arrays.html">Arrays</li>
+            <li data-go="/tutorials/python/libraries.html">Libraries</li>
+            <li data-go="/tutorials/python/colours.html">Colours</li>
+            <li data-go="/tutorials/python/dictionaries.html">Dictionaries</li>
+            <li data-go="/tutorials/python/enums.html">Enumerators</li>
+            <li data-go="/tutorials/python/classes.html">Classes</li>
+            <li data-go="/tutorials/python/exceptions.html">Exception Handling</li>
+            <li data-go="/tutorials/python/filereading.html">File I/O Reading</li>
+        </ul>
+        <h3>Pygame</h3>
+        <ul>
+            <li data-go="/tutorials/python/pygame/setup.html">Setting Up</li>
+            <li data-go="/tutorials/python/pygame/window.html">Window</li>
+            <li data-go="/tutorials/python/pygame/images.html">Images</li>
+            <li data-go="/tutorials/python/pygame/text.html">Text</li>
+            <li data-go="/tutorials/python/pygame/k-input.html">Keyboard Input</li>
+            <li data-go="/tutorials/python/pygame/collision.html">Collision</li>
+        </ul>
+        </div>
+        </div>
+    <div>
+    <div id="content">
+    <!-- banner -->
+    <div id="banner">
+        <div id="btext">
+            <img src="/img/icon-t.png" alt="">
+            <div>
+                <h1>Colours</h1>
+                <p>CodeStacks - Python</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section">
+        <h1>Abstract</h1>
+        <p>
+            These aren't really fundamental 
+            toward coding in Python, but it's 
+            more or less a "nice to know". You 
+            can customise your terminal with 
+            coloured text, or colouring the 
+            terminal itself. Let's go over how.
+        </p>
+    </div>
+
+    <div class="section">
+        <h1>Overview</h1>
+        <p>
+            In Python, in the terminal, you 
+            can display text in not just white, 
+            but any hexadecimal colour. You can 
+            also customise the terminal window, 
+            but it can only be one of 16 colours.
+        </p>
+    </div>
+
+    <div class="section">
+        <h1>Coloured Text</h1>
+        <p>
+            In order to even start to render 
+            your text in colour, you need to 
+            add the following snippet to your code:
+        </p>
+<pre><code class="language-python">def hex_to_rgb(hex_colour):
+#Convert a hex color code to an RGB tuple.
+    hex_colour = hex_colour.lstrip('#')
+    colour = tuple(int(hex_color[i:i+2]
+    return colour, 16) for i in (0, 2, 4))
+
+def colored_text(text, hex_colour):
+# Return ANSI escape code for the colour.
+    r, g, b = hex_to_rgb(hex_colour)
+    rgb = "{r};{g};{b}m{text}"
+    return f"\033[38;2;rgb\033[0m"
+
+</code></pre>
+
+    <p>
+        Now that this snippet is a part of 
+        your code, you can add coloured text by 
+        calling the <c>colored_text()</c> command 
+        inside <c>print()</c>.
+        <br><br>
+        Here's an example of some coloured text:
+    </p>
+
+<pre><code class="lang-python"># Example
+def hex_to_rgb(hex_color):
+    """Convert a hex color code to an RGB tuple."""
+    hex_color = hex_color.lstrip('#')
+    return tuple(int(hex_color[i:i+2], 16) for i in (0, 2, 4))
+
+def colored_text(text, hex_color):
+    """Return text formatted with a specific hex color using ANSI escape codes."""
+    r, g, b = hex_to_rgb(hex_color)
+    return f"\033[38;2;{r};{g};{b}m{text}\033[0m"
+
+print(colored_text(f"This text is red!", "#FF6145"))
+
+_ = input()
+</code></pre>
+
+    <p>
+        You can literally paste that in to
+        any code editor as a Python file, but 
+        it will only work if you run it with native 
+        Python, and not any specific Python 
+        online compiler.
+    </p>
+    </div>
+
+    <div class="section">
+        <h1>Coloured Terminals</h1>
+        <br>
+        <h2>Windows</h2>
+        <p>
+            On top of simply colouring the 
+            text in the terminal, you can colour 
+            the literal terminal itself! The way 
+            you do it involves the <c>os</c> 
+            library.
+            <br><br>
+            On Windows, you need to call <c>os.system()</c>, 
+            and then you add <c>color</c>, then the 
+            background and text colours that you 
+            want the console to display.
+            Here's an example:
+        </p>
+
+<pre><code class="lang-python"># Custom Background, Windows:
+import os
+
+os.system("color B0")
+</code></pre>
+
+
+    <p>
+        Notice how in the snippet above, it says
+        <c>B0</c>? Well, in Windows Python, you 
+        can't use colour names, but colour codes.
+        The background colour goes first, and then 
+        the text colour. Below is the full colour 
+        chart that this uses:
+    </p>
+
+    <table>
+        <tr>
+            <th>Colour</th>
+            <th>Code Point</th>
+            <th>Sample</th>
+        </tr>
+        <tr>
+            <td>Black</td>
+            <td>0</td>
+            <td style="background-color: #000;"></td>
+        </tr>
+        <tr>
+            <td>Blue</td>
+            <td>1</td>
+            <td style="background-color: #000080;"></td>
+        </tr><tr>
+            <td>Green</td>
+            <td>2</td>
+            <td style="background-color: #008000;"></td>
+        </tr><tr>
+            <td>Aqua</td>
+            <td>3</td>
+            <td style="background-color: #008080;"></td>
+        </tr><tr>
+            <td>Red</td>
+            <td>4</td>
+            <td style="background-color: #800000;"></td>
+        </tr>
+        <tr>
+            <td>Purple</td>
+            <td>5</td>
+            <td style="background-color: #800080;"></td>
+        </tr>
+        <tr>
+            <td>Yellow</td>
+            <td>6</td>
+            <td style="background-color: #808000;"></td>
+        </tr><tr>
+            <td>White</td>
+            <td>7</td>
+            <td style="background-color: #c0c0c0;"></td>
+        </tr><tr>
+            <td>Grey</td>
+            <td>8</td>
+            <td style="background-color: #808080;"></td>
+        </tr><tr>
+            <td>Light Blue</td>
+            <td>9</td>
+            <td style="background-color: #00f;"></td>
+        </tr>
+        <tr>
+            <td>Light Green</td>
+            <td>A</td>
+            <td style="background-color: #0f0;"></td>
+        </tr>
+        <tr>
+            <td>Light Aqua</td>
+            <td>B</td>
+            <td style="background-color: #0ff;"></td>
+        </tr><tr>
+            <td>Light Red</td>
+            <td>C</td>
+            <td style="background-color: #f00;"></td>
+        </tr><tr>
+            <td>Light Purple</td>
+            <td>D</td>
+            <td style="background-color: #f0f;"></td>
+        </tr><tr>
+            <td>Light Yellow</td>
+            <td>E</td>
+            <td style="background-color: #ff0;"></td>
+        </tr>
+        <tr>
+            <td>Bright White</td>
+            <td>F</td>
+            <td style="background-color: #fff;"></td>
+        </tr>
+    </table>
+
+    <p>
+        But wait a minute &mdash; weren't we 
+        using hex colour codes just a minute ago?
+        Well, to answer that question, we need to 
+        look back to how Windows handled its colours.
+        It had two ways of showing colours, light, and
+        bright (8 and F), and it couldn't parse 
+        RGB value strings.
+    </p>
+
+    <br><br>
+    <h2>MacOS, Linux, Unix</h2>
+    <p>
+        On macOS, you can't natively change the 
+        background colour of the terminal using 
+        code, rather, you have to change it on 
+        your device settings. And the same pretty 
+        much goes for Linux and macOS.
+    </p>
+
+
+    </div>
+
+    
+    <!-- footer -->
+    <div class="section">
+        <h2>CodeStacks.</h2>
+        <p>
+            Learn to code. 
+            <br>
+            &copy CodeStacks, 2025-<span id="year">20XX</span>.
+            <br>
+            All Rights Reserved.
+        </p>
+    </div>
+    </div>
+    </div>
+</div>
+</body>
+<script src="/index.js"></script>
+<script src="/code/prism.js"></script>
+</html>

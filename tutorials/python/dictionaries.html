@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeStacks - Python Dictionaries</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/code/prism.css">
+    <link rel="shortcut icon" href="/img/icon-f.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=warning" />
+</head>
+<body>
+    <ul class='navbar'>
+    <li class='uri'>
+    <a href='/index.html'
+    ><img
+    src='/img/icon-t.png'
+    alt=''
+    class='site-icon'
+    /></a>
+    <a>CodeStacks</a>
+    </li>
+    <li>
+    <a href='/index.html'><b>Home</b></a>
+    </li>
+    <li><a href='/index.html#tutorials'>Tutorials</a></li>
+    <li><a href='/index.html#about'>About</a></li>
+    </ul>
+
+<div class="overlay">
+        <div id="table">
+            <button id="closeBar" class="material-icons">
+                close
+            </button>
+            <h1>Python</h1>
+            <div id="scroll">
+            <h3>Basic Python</h3>
+            <ul>
+                <li data-go="/tutorials/python.html">Introduction</li>
+                <li data-go="/tutorials/python/basicsyntax.html">Basic Syntax</li>
+                <li data-go="/tutorials/python/operators.html">Operators</li>
+                <li data-go="/tutorials/python/variables.html">Variables</li>
+                <li data-go="/tutorials/python/comments.html">Comments</li>
+                <li data-go="/tutorials/python/ifelsestatements.html">If/Else Statements</li>
+                <li data-go="/tutorials/python/loops.html">Loops</li>
+                <li data-go="/tutorials/python/functions.html">Functions</li>
+                <li data-go="/tutorials/python/arrays.html">Arrays</li>
+                <li data-go="/tutorials/python/libraries.html">Libraries</li>
+                <li data-go="/tutorials/python/colours.html">Colours</li>
+                <li data-go="/tutorials/python/dictionaries.html">Dictionaries</li>
+                <li data-go="/tutorials/python/enums.html">Enumerators</li>
+                <li data-go="/tutorials/python/classes.html">Classes</li>
+                <li data-go="/tutorials/python/exceptions.html">Exception Handling</li>
+                <li data-go="/tutorials/python/filereading.html">File I/O Reading</li>
+            </ul>
+            <h3>Pygame</h3>
+            <ul>
+                <li data-go="/tutorials/python/pygame/setup.html">Setting Up</li>
+                <li data-go="/tutorials/python/pygame/window.html">Window</li>
+                <li data-go="/tutorials/python/pygame/images.html">Images</li>
+                <li data-go="/tutorials/python/pygame/text.html">Text</li>
+                <li data-go="/tutorials/python/pygame/k-input.html">Keyboard Input</li>
+                <li data-go="/tutorials/python/pygame/collision.html">Collision</li>
+            </ul>
+            </div>
+        </div>
+
+        <button id="openTable"
+        class="material-icons">
+            arrow_right
+        </button>
+    </div>
+
+<div id="screen">
+<div id="table2">
+        <h1>Python</h1>
+        <div id="scroll2">
+        <h3>Basic Python</h3>
+        <ul>
+            <li data-go="/tutorials/python.html">Introduction</li>
+            <li data-go="/tutorials/python/basicsyntax.html">Basic Syntax</li>
+            <li data-go="/tutorials/python/operators.html">Operators</li>
+            <li data-go="/tutorials/python/variables.html">Variables</li>
+            <li data-go="/tutorials/python/comments.html">Comments</li>
+            <li data-go="/tutorials/python/ifelsestatements.html">If/Else Statements</li>
+            <li data-go="/tutorials/python/loops.html">Loops</li>
+            <li data-go="/tutorials/python/functions.html">Functions</li>
+            <li data-go="/tutorials/python/arrays.html">Arrays</li>
+            <li data-go="/tutorials/python/libraries.html">Libraries</li>
+            <li data-go="/tutorials/python/colours.html">Colours</li>
+            <li data-go="/tutorials/python/dictionaries.html">Dictionaries</li>
+            <li data-go="/tutorials/python/enums.html">Enumerators</li>
+            <li data-go="/tutorials/python/classes.html">Classes</li>
+            <li data-go="/tutorials/python/exceptions.html">Exception Handling</li>
+            <li data-go="/tutorials/python/filereading.html">File I/O Reading</li>
+        </ul>
+        <h3>Pygame</h3>
+        <ul>
+            <li data-go="/tutorials/python/pygame/setup.html">Setting Up</li>
+            <li data-go="/tutorials/python/pygame/window.html">Window</li>
+            <li data-go="/tutorials/python/pygame/images.html">Images</li>
+            <li data-go="/tutorials/python/pygame/text.html">Text</li>
+            <li data-go="/tutorials/python/pygame/k-input.html">Keyboard Input</li>
+            <li data-go="/tutorials/python/pygame/collision.html">Collision</li>
+        </ul>
+        </div>
+        </div>
+    <div>
+    <div id="content">
+    <!-- banner -->
+    <div id="banner">
+        <div id="btext">
+            <img src="/img/icon-t.png" alt="">
+            <div>
+                <h1>Dictionaries</h1>
+                <p>CodeStacks - Python</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section">
+        <h1>Abstract</h1>
+        <p>
+            Dictionaries in Python exist so that 
+            you can refer to values in hashed form 
+            so you don't need to type in long 
+            strings repeatedly. You can create them 
+            in many ways and you can also use 
+            them in many ways.
+        </p>
+    </div>
+
+    <div class="section">
+        <h1>Overview</h1>
+        <p>
+            To create a dictionary, start with a 
+            variable. Then set the value of that 
+            variable to a pair of curly brackets like 
+            so:
+        </p>
+
+<pre><code class="lang-python">dict = {}
+</code></pre>
+
+    <p>
+        Now that we have a dictionary created, let's 
+        add some keys to store:
+    </p>
+
+<pre><code class="lang-python">keys = {
+    "name": "Alice",
+    "age": 30,
+    "job": ["Python", "Data"]
+}
+</code></pre>
+    
+    <p>
+        As seen above, you can use arrays to
+        store multiple values inside a single 
+        key. Of course, it not as ethical, but 
+        it's still something you can do.
+    </p>
+    </div>
+
+    <div class="section">
+        <h1>Accessing Values</h1>
+        <p>
+            Now that you can create dictionaries 
+            and add keys to hash inside said 
+            dictionaries, let's look at how to
+            access the data that you store.
+        </p>
+<pre><code class="language-python">keys = {
+    "name": "Alice",
+    "age": 30    
+}
+</code></pre>
+
+    <p>
+        To access values, you need to call the 
+        name of the dictionary, and then the 
+        name of the key inside square brackets.
+        <br>
+        You can also access them with the 
+        <c><i>name</i>.get()</c> method, with the 
+        name of the key inside.
+    </p>
+
+<pre><code class="lang-python">keys = {
+    "name": "Alice",
+    "age": 30
+}
+
+print(f"{keys['name']} is {keys['age']} years old.")
+</code></pre>
+
+    <p>
+        In the above example, we take the values 
+        of the dictionary, <c>keys</c>, and we print 
+        the values of it, <c>"name"</c> and 
+        <c>"age"</c> in to a sentence using 
+        <c>f"</c> strings.
+    </p>
+    </div>
+
+    <div class="section">
+        <h1>Injecting Values</h1>
+        <p>
+            Python dictionaries, like arrays, 
+            are dynamic, so you can very easily 
+            add new values to them. Instead of 
+            adding the index, you can add the 
+            name of the key you want to add, 
+            and you set a value.
+        </p>
+
+        <p>
+            In order to inject values, you need 
+            to specify the content and the content 
+            of the item you want to inject.
+            <br><br>
+            You can do this with <c>insert()</c> 
+            or <c>append()</c>.
+        </p>
+
+<pre><code class="lang-python"># Injecting Values:
+keys = {
+    "name": "Alice", 
+    "age": 30
+}
+
+# Inserting a value:
+# First value: Key name,
+# Second value: Content;
+keys["job"] = "Python"
+
+# Checking the updated dictionary:
+for i in keys:
+    print(keys[i])
+</code></pre>
+
+<p>
+    Output:
+</p>
+
+<pre><code class="lang-plain">Alice
+30
+Python
+</code></pre>
+    </div>
+
+    <div class="section">
+        <h1>Removing Values</h1>
+        <p>
+            If you need to <i>remove</i> 
+            values from dictionaries, you can use 
+            the <c>del</c> method or the 
+            <c><i>name</i>.pop()</c> method. You 
+            can apply it to a dictionary like so:
+        </p>
+
+<pre><code class="lang-python"># Example:
+keys = {
+    "name": "Alice",
+    "age": 30,
+    "city": "New York",
+    "job": "Python"
+}
+
+for i in keys:
+    print(keys[i])
+
+del keys["age"]
+delete = keys.pop("city")
+
+for j in keys:
+    print([j])
+</code></pre>
+
+    <p>
+        So essentially, we create a dictionary, 
+        then we delete two values, <c>age</c>, 
+        and <c>"city"</c>. So now, the output 
+        should look like this if you run it:
+    </p>
+
+<pre><code class="lang-plain">Alice
+Python
+</code></pre>
+    </div>
+    <!-- footer -->
+    <div class="section">
+        <h2>CodeStacks.</h2>
+        <p>
+            Learn to code. 
+            <br>
+            &copy CodeStacks, 2025-<span id="year">20XX</span>.
+            <br>
+            All Rights Reserved.
+        </p>
+    </div>
+    </div>
+    </div>
+</div>
+</body>
+<script src="/index.js"></script>
+<script src="/code/prism.js"></script>
+</html>

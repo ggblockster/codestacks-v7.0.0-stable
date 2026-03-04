@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeStacks - Python Try..Except</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/code/prism.css">
+    <link rel="shortcut icon" href="/img/icon-f.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=warning" />
+</head>
+<body>
+    <ul class='navbar'>
+    <li class='uri'>
+    <a href='/index.html'
+    ><img
+    src='/img/icon-t.png'
+    alt=''
+    class='site-icon'
+    /></a>
+    <a>CodeStacks</a>
+    </li>
+    <li>
+    <a href='/index.html'><b>Home</b></a>
+    </li>
+    <li><a href='/index.html#tutorials'>Tutorials</a></li>
+    <li><a href='/index.html#about'>About</a></li>
+    </ul>
+
+<div class="overlay">
+        <div id="table">
+            <button id="closeBar" class="material-icons">
+                close
+            </button>
+            <h1>Python</h1>
+            <div id="scroll">
+            <h3>Basic Python</h3>
+            <ul>
+                <li data-go="/tutorials/python.html">Introduction</li>
+                <li data-go="/tutorials/python/basicsyntax.html">Basic Syntax</li>
+                <li data-go="/tutorials/python/operators.html">Operators</li>
+                <li data-go="/tutorials/python/variables.html">Variables</li>
+                <li data-go="/tutorials/python/comments.html">Comments</li>
+                <li data-go="/tutorials/python/ifelsestatements.html">If/Else Statements</li>
+                <li data-go="/tutorials/python/loops.html">Loops</li>
+                <li data-go="/tutorials/python/functions.html">Functions</li>
+                <li data-go="/tutorials/python/arrays.html">Arrays</li>
+                <li data-go="/tutorials/python/libraries.html">Libraries</li>
+                <li data-go="/tutorials/python/colours.html">Colours</li>
+                <li data-go="/tutorials/python/dictionaries.html">Dictionaries</li>
+                <li data-go="/tutorials/python/enums.html">Enumerators</li>
+                <li data-go="/tutorials/python/classes.html">Classes</li>
+                <li data-go="/tutorials/python/exceptions.html">Exception Handling</li>
+                <li data-go="/tutorials/python/filereading.html">File I/O Reading</li>
+            </ul>
+            <h3>Pygame</h3>
+            <ul>
+                <li data-go="/tutorials/python/pygame/setup.html">Setting Up</li>
+                <li data-go="/tutorials/python/pygame/window.html">Window</li>
+                <li data-go="/tutorials/python/pygame/images.html">Images</li>
+                <li data-go="/tutorials/python/pygame/text.html">Text</li>
+                <li data-go="/tutorials/python/pygame/k-input.html">Keyboard Input</li>
+                <li data-go="/tutorials/python/pygame/collision.html">Collision</li>
+            </ul>
+            </div>
+        </div>
+
+        <button id="openTable"
+        class="material-icons">
+            arrow_right
+        </button>
+    </div>
+
+<div id="screen">
+<div id="table2">
+        <h1>Python</h1>
+        <div id="scroll2">
+        <h3>Basic Python</h3>
+        <ul>
+            <li data-go="/tutorials/python.html">Introduction</li>
+            <li data-go="/tutorials/python/basicsyntax.html">Basic Syntax</li>
+            <li data-go="/tutorials/python/operators.html">Operators</li>
+            <li data-go="/tutorials/python/variables.html">Variables</li>
+            <li data-go="/tutorials/python/comments.html">Comments</li>
+            <li data-go="/tutorials/python/ifelsestatements.html">If/Else Statements</li>
+            <li data-go="/tutorials/python/loops.html">Loops</li>
+            <li data-go="/tutorials/python/functions.html">Functions</li>
+            <li data-go="/tutorials/python/arrays.html">Arrays</li>
+            <li data-go="/tutorials/python/libraries.html">Libraries</li>
+            <li data-go="/tutorials/python/colours.html">Colours</li>
+            <li data-go="/tutorials/python/dictionaries.html">Dictionaries</li>
+            <li data-go="/tutorials/python/enums.html">Enumerators</li>
+            <li data-go="/tutorials/python/classes.html">Classes</li>
+            <li data-go="/tutorials/python/exceptions.html">Exception Handling</li>
+            <li data-go="/tutorials/python/filereading.html">File I/O Reading</li>
+        </ul>
+        <h3>Pygame</h3>
+        <ul>
+            <li data-go="/tutorials/python/pygame/setup.html">Setting Up</li>
+            <li data-go="/tutorials/python/pygame/window.html">Window</li>
+            <li data-go="/tutorials/python/pygame/images.html">Images</li>
+            <li data-go="/tutorials/python/pygame/text.html">Text</li>
+            <li data-go="/tutorials/python/pygame/k-input.html">Keyboard Input</li>
+            <li data-go="/tutorials/python/pygame/collision.html">Collision</li>
+        </ul>
+        </div>
+        </div>
+    <div>
+    <div id="content">
+    <!-- banner -->
+    <div id="banner">
+        <div id="btext">
+            <img src="/img/icon-t.png" alt="">
+            <div>
+                <h1>Exceptions</h1>
+                <p>CodeStacks - Python</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section">
+        <h1>Abstract</h1>
+        <p>
+            Exception handling, better known 
+            as the <c>try..except</c> block, can 
+            be used to handle possible errors in 
+            a clean way without having to see a 
+            syntax error stopping the rest of your 
+            code from running.
+        </p>
+    </div>
+
+    <div class="section">
+        <h1>Overview</h1>
+        <p>
+            The <c>try...except</c> block in 
+            Python has four parts to it. The 
+            <c>try</c> section, where Python 
+            tries to execute the code, the 
+            <c>except</c> section, which is 
+            executed when there is an error, 
+            the <c>else</c> block, which runs 
+            when there are no errors, and the 
+            <c>finally</c> block, which runs 
+            regardless.
+            <br><br>
+            When creating a <c>try.except</c> 
+            block, you can leave out any part 
+            except the <c>try</c> and the 
+            <c>except</c>. You can have multiple 
+            exceptions, but only one <c>try</c>, 
+            and a maximum of one for <c>else</c> 
+            or <c>finally.</c>
+        </p>
+
+<pre><code class="lang-python"># Example
+try:
+  print(x)
+except:
+  print("An error occurred")
+</code></pre>
+
+    <p>
+        Because we have a <c>try...except</c> 
+        block, we can print a message to 
+        the output window if Python finds an 
+        error, as <c>x</c> is not defined.
+    </p>
+
+<pre><code class="lang-python">print(x)
+</code></pre>
+    
+    <p>
+        The above code snippet will 
+        raise an error immediately because
+        we never defined <c>x</c>.
+    </p>
+    </div>
+
+    <div class="section">
+        <h1>Parts of a <c>try..except</c> Block</h1>
+
+        <br>
+        <h2>Try</h2>
+        <p>
+            The <c>try</c> section allows 
+            you to run code assuming that it 
+            won't raise an error. Any code inside 
+            it is safe because of exception 
+            handling.
+        </p>
+<pre><code class="language-python"># Example:
+try:
+    print(x)
+</code></pre>
+
+    <p>
+        And the output:
+    </p>
+
+<pre><code class="lang-plain" style="color: #dd6060;">Syntax Error</code></pre>
+    <p>
+        There is a syntax error because 
+        the block doesn't have an <c>except</c> 
+        block to pair with it.
+    </p>
+
+    <br>
+    <h2>Except</h2>
+    <br>
+    <p>
+        These are essential when you create 
+        a <c>try...except</c> block. The 
+        <c>except</c> block contains the 
+        code that you run if there was an 
+        error in running the code in the 
+        <c>try</c> block.
+    </p>
+
+<pre><code class="lang-python">try:
+    print(x)
+except:
+    print("There was an error.")
+</code></pre>
+
+    <br>
+    <h2>Else</h2>
+    <br>
+    <p>
+        The <c>else</c> block exists to 
+        run code if there are no errors 
+        present for when the <c>try</c> 
+        block was able to succesfully run.
+    </p>
+
+<pre><code class="lang-python">try:
+    print(x)
+except:
+    print("There was an error.")
+else:
+    print("There were no errors.")
+</code></pre>
+
+    <br>
+    <h2>Finally</h2>
+    <br>
+    <p>
+        The <c>finally</c> block in the 
+        <c>try...except</c> block will 
+        always run, regardless of whether 
+        you have an error or you don't.
+    </p>
+
+<pre><code class="lang-python">x = 5
+
+try:
+    print(x)
+except:
+    print("There was an error.")
+else:
+    print("There were no errors.")
+finally:
+    print(f"x is equal to {x}.")
+</code></pre>
+    </div>
+
+    <div class="section">
+        <h1>Multiple Exceptions</h1>
+        <p>
+            Apart from having just one 
+            exception, you can cipher 
+            errors into specific cases. If 
+            the type isn't specified, then 
+            Python will assume that the 
+            block will run on any type of 
+            error. For example, if you want 
+            to run some code if there's a 
+            <c>NameError</c>, you can!
+        </p>
+
+<pre><code class="lang-python"># Exceptions:
+x = 5
+
+try:
+    print(y)
+except NameError:
+    print("NameError")
+except:
+    print("There was an error.")
+</code></pre>
+    </div>
+
+<div class="section">
+    <h1>Error Types</h1>
+    <p>Since we covered that you can 
+        specify under which error that 
+        an <c>except</c> block can run, 
+        let's look at the types of errors 
+        that you can choose from:
+    </p>
+
+    <br>
+    <div id="errorTable">
+        <table>
+        <tr>
+            <th>Exception</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>ArithmeticError</td>
+            <td>Errors in numeric calculations.</td>
+        </tr>
+        <tr>
+            <td>AssertionError</td>
+            <td>Raised on failure of assertion statement.</td>
+        </tr>
+        <tr>
+            <td>AttributeError</td>
+            <td>Attribute/Assignment Fail.</td>
+        </tr>
+        <tr>
+            <td>Exception</td>
+            <td>General Error.</td>
+        </tr>
+        <tr>
+            <td>EOFError</td>
+            <td><c>input()</c> hits and "end of file" condition.</td>
+        </tr>
+        <tr>
+            <td>FloatingPointError</td>
+            <td>Floating point calculation fail.</td>
+        </tr>
+        <tr>
+            <td>GeneratorExit</td>
+            <td>Generator is closed with <c>close()</c>.</td>
+        </tr>
+        <tr>
+            <td>ImportError</td>
+            <td>When an imported module does not exist.</td>
+        </tr>
+        <tr>
+            <td>IndentationError</td>
+            <td>
+                When the index of a sequence 
+                does not exist.
+            </td>
+        </tr>
+        <tr>
+            <td>KeyError</td>
+            <td>
+                Raised when a key does not exist 
+                in a dictionary.
+            </td>
+        </tr>
+        <tr>
+            <td>KeyboardInterrupt</td>
+            <td>Raised when the user presses 
+                <c>Ctrl+C</c>, <c>Ctrl+Z</c> 
+                or <c>Delete</c>.
+            </td>
+        </tr>
+        <tr>
+            <td>LookupError</td>
+            <td>Raised when errors raised 
+                cannot be found.
+            </td>
+        </tr>
+        <tr>
+            <td>MemoryError</td>
+            <td>When a program runs out of 
+                memory.
+            </td>
+        </tr>
+        <tr>
+            <td>NameError</td>
+            <td>When a variable does not exist.</td>
+        </tr>
+        <tr>
+            <td>NotImplementedError</td>
+            <td>When an abstract method 
+                requires an inherited class 
+                to override the method.
+            </td>
+        </tr>
+        <tr>
+            <td>OSError</td>
+            <td>Raised when a system 
+                related operation causes an 
+                error.
+            </td>
+        </tr>
+        <tr>
+            <td>OverflowError</td>
+            <td>When the result of a numeric 
+                calculation is too large.
+            </td>
+        </tr>
+        <tr>
+            <td>ReferenceError</td>
+            <td>When a weak reference object 
+                does not exist.
+            </td>
+        </tr>
+        <tr>
+            <td>RuntimeError</td>
+            <td>Raised when an error occurs 
+                under no specific exceptions.
+            </td>
+        </tr>
+            <td>StopIteration</td>
+            <td>When the <c>next</c> method 
+            has no further values.</td>
+        </tr>
+        </tr>
+            <td>SyntaxError</td>
+            <td>When a syntax error occurs.</td>
+        </tr>
+        </tr>
+            <td>TabError</td>
+            <td>When indentation consists of 
+                tabs or spaces.
+            </td>
+        </tr>
+        </tr>
+            <td>SystemError</td>
+            <td>When a system error occurs.</td>
+        </tr>
+        </tr>
+            <td>SystemExit</td>
+            <td>When <c>sys.exit</c> is called.</td>
+        </tr>
+        </tr>
+            <td>TypeError</td>
+            <td>When two different types 
+                are combined.
+            </td>
+        </tr>
+        </tr>
+            <td>UnboundLocalError</td>
+            <td>When a local variable is 
+                referenced before assignment.
+            </td>
+        </tr>
+        </tr>
+            <td>UnicodeError</td>
+            <td>When a unicode problem 
+                occurs.
+            </td>
+        </tr>
+        </tr>
+            <td>UnicodeEncodeError</td>
+            <td>Error in encoding unicode.</td>
+        </tr>
+        </tr>
+            <td>UnicodeDecodeError</td>
+            <td>Error in decoding unicode.</td>
+        </tr>
+        </tr>
+            <td>UnicodeTranslateError</td>
+            <td>Error in unicode translation.</td>
+        </tr>
+        </tr>
+            <td>ValueError</td>
+            <td>Error in value type (wrong type).</td>
+        </tr>
+        </tr>
+            <td>ZeroDivisionError</td>
+            <td>When the program attempts 
+                to divide by zero.
+            </td>
+        </tr>
+    </table>
+    </div>
+</div>
+
+<div class="section">
+    <h1>Raising Errors</h1>
+    <p>
+        If you want to define what you 
+        consider an error in your code, you 
+        can use the <c>raise</c> keyword, then 
+        add the name of an error, and Python will 
+        close the program respecting the error.
+    </p>
+
+<pre><code class="lang-python">x = -1
+
+if x < 0:
+    raise ValueError("No numbers below 0.")
+</code></pre>
+</div>
+    <!-- footer -->
+    <div class="section">
+        <h2>CodeStacks.</h2>
+        <p>
+            Learn to code. 
+            <br>
+            &copy CodeStacks, 2025-<span id="year">20XX</span>.
+            <br>
+            All Rights Reserved.
+        </p>
+    </div>
+    </div>
+    </div>
+</div>
+</body>
+<script src="/index.js"></script>
+<script src="/code/prism.js"></script>
+</html>

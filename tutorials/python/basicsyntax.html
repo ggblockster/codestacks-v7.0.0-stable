@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeStacks - Python Basic Syntax</title>
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="../../code/prism.css">
+    <link rel="shortcut icon" href="../../img/icon-f.png" type="image/x-icon">
+</head>
+<body>
+    <ul class='navbar'>
+    <li class='uri'>
+    <a href='../../index.html'
+    ><img
+    src='../../img/icon-t.png'
+    alt=''
+    class='site-icon'
+    /></a>
+    <a>CodeStacks</a>
+    </li>
+    <li>
+    <a href='../../index.html'><b>Home</b></a>
+    </li>
+    <li><a href='../../index.html#tutorials'>Tutorials</a></li>
+    <li><a href='../../index.html#about'>About</a></li>
+    </ul>
+
+<div class="overlay">
+        <div id="table">
+            <button id="closeBar" class="material-icons">
+                close
+            </button>
+            <h1>Python</h1>
+            <div id="scroll">
+            <h3>Basic Python</h3>
+            <ul>
+                <li data-go="../python.html">Introduction</li>
+                <li data-go="../python/basicsyntax.html">Basic Syntax</li>
+                <li data-go="../python/operators.html">Operators</li>
+                <li data-go="../python/variables.html">Variables</li>
+                <li data-go="../python/comments.html">Comments</li>
+                <li data-go="../python/ifelsestatements.html">If/Else Statements</li>
+                <li data-go="../python/loops.html">Loops</li>
+                <li data-go="../python/functions.html">Functions</li>
+                <li data-go="../python/arrays.html">Arrays</li>
+                <li data-go="../python/libraries.html">Libraries</li>
+                <li data-go="../python/colours.html">Colours</li>
+                <li data-go="../python/dictionaries.html">Dictionaries</li>
+                <li data-go="../python/enums.html">Enumerators</li>
+                <li data-go="../python/classes.html">Classes</li>
+                <li data-go="../python/exceptions.html">Exception Handling</li>
+                <li data-go="../python/filereading.html">File I/O Reading</li>
+            </ul>
+            <h3>Pygame</h3>
+            <ul>
+                <li data-go="../python/pygame/setup.html">Setting Up</li>
+                <li data-go="../python/pygame/window.html">Window</li>
+                <li data-go="../python/pygame/images.html">Images</li>
+                <li data-go="../python/pygame/text.html">Text</li>
+                <li data-go="../python/pygame/k-input.html">Keyboard Input</li>
+                <li data-go="../python/pygame/collision.html">Collision</li>
+            </ul>
+            </div>
+        </div>
+
+        <button id="openTable"
+        class="material-icons">
+            arrow_right
+        </button>
+    </div>
+
+<div id="screen">
+<div id="table2">
+        <h1>Python</h1>
+        <div id="scroll2">
+        <h3>Basic Python</h3>
+        <ul>
+            <li data-go="../python.html">Introduction</li>
+            <li data-go="../python/basicsyntax.html">Basic Syntax</li>
+            <li data-go="../python/operators.html">Operators</li>
+            <li data-go="../python/variables.html">Variables</li>
+            <li data-go="../python/comments.html">Comments</li>
+            <li data-go="../python/ifelsestatements.html">If/Else Statements</li>
+            <li data-go="../python/loops.html">Loops</li>
+            <li data-go="../python/functions.html">Functions</li>
+            <li data-go="../python/arrays.html">Arrays</li>
+            <li data-go="../python/libraries.html">Libraries</li>
+            <li data-go="../python/colours.html">Colours</li>
+            <li data-go="../python/dictionaries.html">Dictionaries</li>
+            <li data-go="../python/enums.html">Enumerators</li>
+            <li data-go="../python/classes.html">Classes</li>
+            <li data-go="../python/exceptions.html">Exception Handling</li>
+            <li data-go="../python/filereading.html">File I/O Reading</li>
+        </ul>
+        <h3>Pygame</h3>
+        <ul>
+            <li data-go="../python/pygame/setup.html">Setting Up</li>
+            <li data-go="../python/pygame/window.html">Window</li>
+            <li data-go="../python/pygame/images.html">Images</li>
+            <li data-go="../python/pygame/text.html">Text</li>
+            <li data-go="../python/pygame/k-input.html">Keyboard Input</li>
+            <li data-go="../python/pygame/collision.html">Collision</li>
+        </ul>
+        </div>
+        </div>
+    <div>
+    <div id="content">
+    <!-- banner -->
+    <div id="banner">
+        <div id="btext">
+            <img src="../../img/icon-t.png" alt="">
+            <div>
+                <h1>Basic Syntax</h1>
+                <p>CodeStacks - Python</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section">
+        <h1>Abstract</h1>
+        <p>
+            When coding in Python, there's 
+            a key syntax you need to follow. 
+            This syntax is like the language 
+            your device understands. Python 
+            as a coding language was 
+            developed then released in 1991 
+            as an English look-alike to make 
+            it easy to learn, making it one 
+            of the first languages any 
+            programmer jumps to when 
+            beginning their journey.
+        </p>
+    </div>
+
+    <div class="section">
+        <h1>Overview</h1>
+        <p>
+            When coding in Python, you need 
+            to understand syntax. Operations 
+            need to be shown as certain 
+            symbols, and they follow the 
+            order of operations for 
+            calculations, (which will be 
+            covered later here). Brackets 
+            are extremely useful when you 
+            need to separate items for the 
+            order of operations, covered 
+            here.
+        </p>
+    </div>
+
+    <div class="section">
+        <h1>String Syntax</h1>
+        <p>
+            This cannot be overstated enough, 
+            and it is REALLY important for 
+            how you type them. When you use 
+            quotations in Python, it must 
+            be only one type for a string 
+            or another. Those are the single 
+            and double mark, they are 
+            interchangeable. The example 
+            below shows just how they 
+            should be used when you have 
+            to deal with strings:
+        </p>
+<pre><code class="language-python"># Valid Usage
+print("Hello, Python!")
+print('Hello, Python!')
+
+# Invalid Usage
+print("Hello, Python!')
+print('Hello, Python!")</code></pre>
+        <p>
+            ... notice the mismatch in 
+            quotation marks in the invalid 
+            code? Mismatches in quotations 
+            will cause Python to throw an 
+            error, so it will fail to run 
+            the rest of the code so watch 
+            out for that!
+        </p>
+    </div>
+
+    <div class="section">
+        <h1>Useful Functions</h1>
+        <p>
+            Some really useful functions you'll 
+            find yourself using a lot on Command 
+            Prompt output code is the <c>print()</c> 
+            command, and the <c>input()</c> command. 
+            You'll also find yourself using 
+            <c>str()</c> and <c>int()</c>, but 
+            not as much as <c>print()</c> and 
+            <c>input()</c>.
+            <br><br>
+            The way you'd put them in code 
+            basically look like this:
+        </p>
+<pre><code class="language-python"># Print Command:
+print("Hello, Python!")
+
+# Input Command:
+_ = input("Enter some text: ")</code></pre>
+    </div>
+
+    <div class="section">
+        <h1>The PRINT Command</h1>
+        <p>
+            As shown above on how to use it, 
+            the print command does one thing: 
+            it takes any string (text) that 
+            it finds within quotations and 
+            prints it to the output. Like 
+            this:
+        </p>
+<pre><code class="language-python">Hello, Python!
+</code></pre>
+    </div>
+
+    <div class="section">
+        <h1>Inputs</h1>
+        <p>
+            This is also what you would see 
+            in your command prompt when you 
+            use an <c>input()</c> command 
+            &mdash; except for the fact that 
+            you have to type text in. A really 
+            important factor is that an input 
+            prompt must be assigned to a 
+            variable. More on variables 
+            will be covered over later. Below,
+            is an example of locking the auto-closing 
+            part of the terminal, using the input 
+            prompt:
+        </p>
+<pre><code class="language-python"># The Input Command:
+text = input("What's your name?")
+
+print("Hello, ", text, "!")
+</code></pre>
+<p>
+    The code above simply prints whatever 
+    you typed.
+</p>
+    </div>
+
+    <div class="section">
+        <h1>Integers and Floats</h1>
+        <p>
+            Integers in Python are whole numbers, 
+            positive or negative. You can convert 
+            different values into integers and back, 
+            however, it can only a number, more specifically
+            one without place value smaller than 1.
+            <br><br>
+            If you want a number with decimals, then 
+            floats are what you're looking for.
+
+            To convert something to an integer, 
+            you need to wrap it inside 
+            <c>int()</c>. Similarly, to convert something 
+            to a float value, you use <c>float()</c>.
+        </p>
+        <br>
+        <p>Here's an example:</p>
+<pre><code class="language-python"># Convert a string to an integer:
+string = "123"
+integer = int(string)
+
+print(integer)
+</code></pre>
+    <p>
+        ...and if you wanted to convert 
+        them to floats instead:
+    </p>
+
+<pre><code class="language-python"># Convert a string to a float:
+string = "12.34"
+float = float(string)
+
+print(float)
+</code></pre>
+
+<p>
+    Oh, and by the way, you <i>can</i> print 
+    integers and floats, but it's easier to manage 
+    as strings.
+</p>
+    </div>
+
+    <div class="section">
+        <h1>String Manipulation</h1>
+        <p>
+            Strings are defined with quotations.
+            To change them into an integer or float, 
+            you can use the <c>int()</c> or 
+            <c>float()</c> commands respectively.
+            Since we covered how to convert strings 
+            to integers or floats, the next step is 
+            converting values to strings. All values 
+            are compatible with strings, but not the 
+            other way.
+        </p>
+<pre><code class="language-python"># Convert integers to strings:
+int = 123
+str = str(int) # Returns "123", as a string.
+</code></pre>
+    </div>
+    <!-- footer -->
+    <div class="section">
+        <h2>CodeStacks.</h2>
+        <p>
+            Learn to code. 
+            <br>
+            &copy CodeStacks, 2025-<span id="year">20XX</span>.
+            <br>
+            All Rights Reserved.
+        </p>
+    </div>
+    </div>
+    </div>
+</div>
+</body>
+<script src="../../index.js"></script>
+<script src="../../code/prism.js"></script>
+</html>

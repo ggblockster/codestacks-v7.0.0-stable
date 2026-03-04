@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeStacks - Python Comments</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/code/prism.css">
+    <link rel="shortcut icon" href="/img/icon-f.png" type="image/x-icon">
+</head>
+<body>
+    <ul class='navbar'>
+    <li class='uri'>
+    <a href='/index.html'
+    ><img
+    src='/img/icon-t.png'
+    alt=''
+    class='site-icon'
+    /></a>
+    <a>CodeStacks</a>
+    </li>
+    <li>
+    <a href='/index.html'><b>Home</b></a>
+    </li>
+    <li><a href='/index.html#tutorials'>Tutorials</a></li>
+    <li><a href='/index.html#about'>About</a></li>
+    </ul>
+
+<div class="overlay">
+        <div id="table">
+            <button id="closeBar" class="material-icons">
+                close
+            </button>
+            <h1>Python</h1>
+            <div id="scroll">
+            <h3>Basic Python</h3>
+            <ul>
+                <li data-go="../python.html">Introduction</li>
+                <li data-go="../python/basicsyntax.html">Basic Syntax</li>
+                <li data-go="../python/operators.html">Operators</li>
+                <li data-go="../python/variables.html">Variables</li>
+                <li data-go="../python/comments.html">Comments</li>
+                <li data-go="../python/ifelsestatements.html">If/Else Statements</li>
+                <li data-go="../python/loops.html">Loops</li>
+                <li data-go="../python/functions.html">Functions</li>
+                <li data-go="../python/arrays.html">Arrays</li>
+                <li data-go="../python/libraries.html">Libraries</li>
+                <li data-go="../python/colours.html">Colours</li>
+                <li data-go="../python/dictionaries.html">Dictionaries</li>
+                <li data-go="../python/enums.html">Enumerators</li>
+                <li data-go="../python/classes.html">Classes</li>
+                <li data-go="../python/exceptions.html">Exception Handling</li>
+                <li data-go="../python/filereading.html">File I/O Reading</li>
+            </ul>
+            <h3>Pygame</h3>
+            <ul>
+                <li data-go="../python/pygame/setup.html">Setting Up</li>
+                <li data-go="../python/pygame/window.html">Window</li>
+                <li data-go="../python/pygame/images.html">Images</li>
+                <li data-go="../python/pygame/text.html">Text</li>
+                <li data-go="../python/pygame/k-input.html">Keyboard Input</li>
+                <li data-go="../python/pygame/collision.html">Collision</li>
+            </ul>
+            </div>
+        </div>
+
+        <button id="openTable"
+        class="material-icons">
+            arrow_right
+        </button>
+    </div>
+
+<div id="screen">
+<div id="table2">
+        <h1>Python</h1>
+        <div id="scroll2">
+        <h3>Basic Python</h3>
+        <ul>
+            <li data-go="../python.html">Introduction</li>
+            <li data-go="../python/basicsyntax.html">Basic Syntax</li>
+            <li data-go="../python/operators.html">Operators</li>
+            <li data-go="../python/variables.html">Variables</li>
+            <li data-go="../python/comments.html">Comments</li>
+            <li data-go="../python/ifelsestatements.html">If/Else Statements</li>
+            <li data-go="../python/loops.html">Loops</li>
+            <li data-go="../python/functions.html">Functions</li>
+            <li data-go="../python/arrays.html">Arrays</li>
+            <li data-go="../python/libraries.html">Libraries</li>
+            <li data-go="../python/colours.html">Colours</li>
+            <li data-go="../python/dictionaries.html">Dictionaries</li>
+            <li data-go="../python/enums.html">Enumerators</li>
+            <li data-go="../python/classes.html">Classes</li>
+            <li data-go="../python/exceptions.html">Exception Handling</li>
+            <li data-go="../python/filereading.html">File I/O Reading</li>
+        </ul>
+        <h3>Pygame</h3>
+        <ul>
+            <li data-go="../python/pygame/setup.html">Setting Up</li>
+            <li data-go="../python/pygame/window.html">Window</li>
+            <li data-go="../python/pygame/images.html">Images</li>
+            <li data-go="../python/pygame/text.html">Text</li>
+            <li data-go="../python/pygame/k-input.html">Keyboard Input</li>
+            <li data-go="../python/pygame/collision.html">Collision</li>
+        </ul>
+        </div>
+        </div>
+    <div>
+    <div id="content">
+    <!-- banner -->
+    <div id="banner">
+        <div id="btext">
+            <img src="/img/icon-t.png" alt="">
+            <div>
+                <h1>Comments</h1>
+                <p>CodeStacks - Python</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section">
+        <h1>Abstract</h1>
+        <p>
+            Comments in Python are a simple 
+            but useful way to organise your 
+            code. What if others want to edit 
+            it or use it? Well, comments are 
+            easy to use, and they can be 
+            used anywhere in your code. 
+            They don't have to be multi-line 
+            but they can be. 
+            Comments are the way to organise 
+            code as even just little notes can 
+            help make it just that much more 
+            readable.
+        </p>
+    </div>
+
+    <div class="section">
+        <h1>Overview</h1>
+        <p>
+            Comments can easily be created 
+            with a hashtag symbol <c>#</c>. It's 
+            as simple as that. Just remember 
+            to leave a space immediately after 
+            the hashtag and write your comment. 
+            One important thing to note is 
+            that anything on a line after 
+            the hashtag and space is all 
+            comment, that is, any code you 
+            try to write on a line after 
+            defining a comment will not 
+            work.
+        </p>
+    </div>
+
+    <div class="section">
+        <h1>Application</h1>
+        <p>
+            Here is an example of how you 
+            could use comments in your code:
+        </p>
+<pre><code class="language-python"># Example:
+print("Comment") # This is a comment.
+</code></pre>
+
+    <p>
+        To make things simpler, most 
+        code editors colour comments in grey, 
+        which makes it easier to identify that 
+        comments will be ignored by the 
+        compiler.
+    </p>
+    </div>
+
+    <div class="section">
+        <h1>Multiline Comments</h1>
+        <br><br>
+        <h2>Method 1</h2>
+        <p>
+            What about comments that span 
+            across multiple lines of code? 
+            Well, the simplest way to do it 
+            is just having the comment tag 
+            on each line, as it is the most 
+            efficient and uses the least 
+            amount of processing power:
+        </p>
+<pre><code class="language-python"># Multiline Comments.
+# Line 2
+# Line 3
+# ... and so on ...</code></pre>
+        <br>
+        <h2>Method 2 (More Expensive)</h2>
+        <p>
+            There's also the triple-quote method, which involves using a string denoted by three quotes (double or single, but only one for the whole comment), and this only works if you choose to not apply it to a variable. The issue with this method however is that it actually does use extra processing power, so we don't recommend that you use it a lot in your projects.
+            <br><br>
+            One thing useful about multi-line comments made this way is that you can temporarily disable any code by just having the triple quotations on the line above, and on the line below. This in practical use with a <c>print()</c> command looks like this:
+        </p>
+
+<pre><code class="lang-python">"""
+print("Hello, world!")
+# This code has been disabled.
+"""</code></pre>
+</div>
+
+    <!-- footer -->
+    <div class="section">
+        <h2>CodeStacks.</h2>
+        <p>
+            Learn to code. 
+            <br>
+            &copy CodeStacks, 2025-<span id="year">20XX</span>.
+            <br>
+            All Rights Reserved.
+        </p>
+    </div>
+    </div>
+    </div>
+</div>
+</body>
+<script src="../../index.js"></script>
+<script src="../../code/prism.js"></script>
+</html>

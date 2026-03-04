@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeStacks - Python Classes</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/code/prism.css">
+    <link rel="shortcut icon" href="/img/icon-f.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=warning" />
+</head>
+<body>
+    <ul class='navbar'>
+    <li class='uri'>
+    <a href='/index.html'
+    ><img
+    src='/img/icon-t.png'
+    alt=''
+    class='site-icon'
+    /></a>
+    <a>CodeStacks</a>
+    </li>
+    <li>
+    <a href='/index.html'><b>Home</b></a>
+    </li>
+    <li><a href='/index.html#tutorials'>Tutorials</a></li>
+    <li><a href='/index.html#about'>About</a></li>
+    </ul>
+
+<div class="overlay">
+        <div id="table">
+            <button id="closeBar" class="material-icons">
+                close
+            </button>
+            <h1>Python</h1>
+            <div id="scroll">
+            <h3>Basic Python</h3>
+            <ul>
+                <li data-go="/tutorials/python.html">Introduction</li>
+                <li data-go="/tutorials/python/basicsyntax.html">Basic Syntax</li>
+                <li data-go="/tutorials/python/operators.html">Operators</li>
+                <li data-go="/tutorials/python/variables.html">Variables</li>
+                <li data-go="/tutorials/python/comments.html">Comments</li>
+                <li data-go="/tutorials/python/ifelsestatements.html">If/Else Statements</li>
+                <li data-go="/tutorials/python/loops.html">Loops</li>
+                <li data-go="/tutorials/python/functions.html">Functions</li>
+                <li data-go="/tutorials/python/arrays.html">Arrays</li>
+                <li data-go="/tutorials/python/libraries.html">Libraries</li>
+                <li data-go="/tutorials/python/colours.html">Colours</li>
+                <li data-go="/tutorials/python/dictionaries.html">Dictionaries</li>
+                <li data-go="/tutorials/python/enums.html">Enumerators</li>
+                <li data-go="/tutorials/python/classes.html">Classes</li>
+                <li data-go="/tutorials/python/exceptions.html">Exception Handling</li>
+                <li data-go="/tutorials/python/filereading.html">File I/O Reading</li>
+            </ul>
+            <h3>Pygame</h3>
+            <ul>
+                <li data-go="/tutorials/python/pygame/setup.html">Setting Up</li>
+                <li data-go="/tutorials/python/pygame/window.html">Window</li>
+                <li data-go="/tutorials/python/pygame/images.html">Images</li>
+                <li data-go="/tutorials/python/pygame/text.html">Text</li>
+                <li data-go="/tutorials/python/pygame/k-input.html">Keyboard Input</li>
+                <li data-go="/tutorials/python/pygame/collision.html">Collision</li>
+            </ul>
+            </div>
+        </div>
+
+        <button id="openTable"
+        class="material-icons">
+            arrow_right
+        </button>
+    </div>
+
+<div id="screen">
+<div id="table2">
+        <h1>Python</h1>
+        <div id="scroll2">
+        <h3>Basic Python</h3>
+        <ul>
+            <li data-go="/tutorials/python.html">Introduction</li>
+            <li data-go="/tutorials/python/basicsyntax.html">Basic Syntax</li>
+            <li data-go="/tutorials/python/operators.html">Operators</li>
+            <li data-go="/tutorials/python/variables.html">Variables</li>
+            <li data-go="/tutorials/python/comments.html">Comments</li>
+            <li data-go="/tutorials/python/ifelsestatements.html">If/Else Statements</li>
+            <li data-go="/tutorials/python/loops.html">Loops</li>
+            <li data-go="/tutorials/python/functions.html">Functions</li>
+            <li data-go="/tutorials/python/arrays.html">Arrays</li>
+            <li data-go="/tutorials/python/libraries.html">Libraries</li>
+            <li data-go="/tutorials/python/colours.html">Colours</li>
+            <li data-go="/tutorials/python/dictionaries.html">Dictionaries</li>
+            <li data-go="/tutorials/python/enums.html">Enumerators</li>
+            <li data-go="/tutorials/python/classes.html">Classes</li>
+            <li data-go="/tutorials/python/exceptions.html">Exception Handling</li>
+            <li data-go="/tutorials/python/filereading.html">File I/O Reading</li>
+        </ul>
+        <h3>Pygame</h3>
+        <ul>
+            <li data-go="/tutorials/python/pygame/setup.html">Setting Up</li>
+            <li data-go="/tutorials/python/pygame/window.html">Window</li>
+            <li data-go="/tutorials/python/pygame/images.html">Images</li>
+            <li data-go="/tutorials/python/pygame/text.html">Text</li>
+            <li data-go="/tutorials/python/pygame/k-input.html">Keyboard Input</li>
+            <li data-go="/tutorials/python/pygame/collision.html">Collision</li>
+        </ul>
+        </div>
+        </div>
+    <div>
+    <div id="content">
+    <!-- banner -->
+    <div id="banner">
+        <div id="btext">
+            <img src="/img/icon-t.png" alt="">
+            <div>
+                <h1>Classes</h1>
+                <p>CodeStacks - Python</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section">
+        <h1>Abstract</h1>
+        <p>
+            Classes in Python are like 
+            blueprints. They allow for more 
+            object-oriented programming so that 
+            you can create more structured code.
+        </p>
+    </div>
+
+    <div class="section">
+        <h1>Overview</h1>
+        <p>
+            To create a class, you need to 
+            use the <c>class</c> keyword, and 
+            then the name of the class, followed 
+            by a pair of brackets and a colon.
+            <br><br>
+            For now, we'll add temporary values 
+            to the class so we can modify it 
+            later.
+        </p>
+
+<pre><code class="lang-python">class myClass():
+    name = ""
+    age = 0
+    job = ""
+</code></pre>
+    </div>
+
+    <div class="section">
+        <h1>Adding Values</h1>
+        <p>
+            Now that you have a class 
+            created, let's add some values to 
+            make it usuable. When you create 
+            the class, you can add initial 
+            values that you can use straight 
+            away.
+        </p>
+<pre><code class="language-python"># Example:
+class Season():
+    SPRING = 1
+    SUMMER = 2
+    AUTUMN = 3
+    WINTER = 4
+</code></pre>
+
+    <p>
+        But if you want to add values later 
+        on, you need to create an object of 
+        a class. Then, you can modify its 
+        values.
+    </p>
+<pre><code class="lang-python"># Example
+class Bike:
+    name = ""
+    gear = ""
+
+# Creating an object.
+bike = Bike()
+
+bike.name = "BMX"
+bike.gear = 21
+
+print(f"Bike name: {bike.name}, Gear: {bike.gear}")
+</code></pre>
+    <p>
+        So we have a class named <c>Bike</c>, 
+        and we create a variable holding the 
+        object data. We set the name of the bike 
+        to <c>"BMX"</c> and the <c>gear</c> 
+        property to <c>21</c>. So the output 
+        should look like this:
+    </p>
+
+<pre><code class="lang-plain">Bike name: BMX, Gear: 21</code></pre>
+    </div>
+
+    <div class="section">
+        <h1>Deleting Objects</h1>
+        <p>
+            Let's say you need to delete 
+            an object that you created inside 
+            a class, through code. The way you 
+            would do it is very similar to 
+            the method with dictionaries &mdash; 
+            the <c>del</c> keyword.
+        </p>
+
+<pre><code class="lang-python"># Deleting Objects:
+class myClass():
+    name = "Alice"
+    age = 0
+
+name = myClass()
+age = myClass()
+age.value = 30
+
+# Deleting an object:
+del age
+
+print(myClass.name, myClass.age)
+</code></pre>
+
+<p>
+    The above code will now produce an 
+    error because there is no object in the 
+    class with the name, <c>age</c>. That 
+    is because it has been deleted.
+</p>
+    </div>
+
+<div class="section">
+    <h1>The PASS Statement</h1>
+    <p>
+        Classes in Python are not 
+        supposed to be empty, but if for 
+        some reason you may want to have 
+        an empty class, you can add the 
+        <c>pass</c> statement inside, which 
+        will effectively prevent the 
+        code from returning an error.
+    </p>
+
+<pre><code class="lang-python">class myClass():
+    pass
+</code></pre>
+</div>
+
+    <!-- footer -->
+    <div class="section">
+        <h2>CodeStacks.</h2>
+        <p>
+            Learn to code. 
+            <br>
+            &copy CodeStacks, 2025-<span id="year">20XX</span>.
+            <br>
+            All Rights Reserved.
+        </p>
+    </div>
+    </div>
+    </div>
+</div>
+</body>
+<script src="/index.js"></script>
+<script src="/code/prism.js"></script>
+</html>

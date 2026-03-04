@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeStacks - Python Loops</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/code/prism.css">
+    <link rel="shortcut icon" href="/img/icon-f.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=warning" />
+</head>
+<body>
+    <ul class='navbar'>
+    <li class='uri'>
+    <a href='/index.html'
+    ><img
+    src='/img/icon-t.png'
+    alt=''
+    class='site-icon'
+    /></a>
+    <a>CodeStacks</a>
+    </li>
+    <li>
+    <a href='/index.html'><b>Home</b></a>
+    </li>
+    <li><a href='/index.html#tutorials'>Tutorials</a></li>
+    <li><a href='/index.html#about'>About</a></li>
+    </ul>
+
+<div class="overlay">
+        <div id="table">
+            <button id="closeBar" class="material-icons">
+                close
+            </button>
+            <h1>Python</h1>
+            <div id="scroll">
+            <h3>Basic Python</h3>
+            <ul>
+                <li data-go="../python.html">Introduction</li>
+                <li data-go="../python/basicsyntax.html">Basic Syntax</li>
+                <li data-go="../python/operators.html">Operators</li>
+                <li data-go="../python/variables.html">Variables</li>
+                <li data-go="../python/comments.html">Comments</li>
+                <li data-go="../python/ifelsestatements.html">If/Else Statements</li>
+                <li data-go="../python/loops.html">Loops</li>
+                <li data-go="../python/functions.html">Functions</li>
+                <li data-go="../python/arrays.html">Arrays</li>
+                <li data-go="../python/libraries.html">Libraries</li>
+                <li data-go="../python/colours.html">Colours</li>
+                <li data-go="../python/dictionaries.html">Dictionaries</li>
+                <li data-go="../python/enums.html">Enumerators</li>
+                <li data-go="../python/classes.html">Classes</li>
+                <li data-go="../python/exceptions.html">Exception Handling</li>
+                <li data-go="../python/filereading.html">File I/O Reading</li>
+            </ul>
+            <h3>Pygame</h3>
+            <ul>
+                <li data-go="../python/pygame/setup.html">Setting Up</li>
+                <li data-go="../python/pygame/window.html">Window</li>
+                <li data-go="../python/pygame/images.html">Images</li>
+                <li data-go="../python/pygame/text.html">Text</li>
+                <li data-go="../python/pygame/k-input.html">Keyboard Input</li>
+                <li data-go="../python/pygame/collision.html">Collision</li>
+            </ul>
+            </div>
+        </div>
+
+        <button id="openTable"
+        class="material-icons">
+            arrow_right
+        </button>
+    </div>
+
+<div id="screen">
+<div id="table2">
+        <h1>Python</h1>
+        <div id="scroll2">
+        <h3>Basic Python</h3>
+        <ul>
+            <li data-go="../python.html">Introduction</li>
+            <li data-go="../python/basicsyntax.html">Basic Syntax</li>
+            <li data-go="../python/operators.html">Operators</li>
+            <li data-go="../python/variables.html">Variables</li>
+            <li data-go="../python/comments.html">Comments</li>
+            <li data-go="../python/ifelsestatements.html">If/Else Statements</li>
+            <li data-go="../python/loops.html">Loops</li>
+            <li data-go="../python/functions.html">Functions</li>
+            <li data-go="../python/arrays.html">Arrays</li>
+            <li data-go="../python/libraries.html">Libraries</li>
+            <li data-go="../python/colours.html">Colours</li>
+            <li data-go="../python/dictionaries.html">Dictionaries</li>
+            <li data-go="../python/enums.html">Enumerators</li>
+            <li data-go="../python/classes.html">Classes</li>
+            <li data-go="../python/exceptions.html">Exception Handling</li>
+            <li data-go="../python/filereading.html">File I/O Reading</li>
+        </ul>
+        <h3>Pygame</h3>
+        <ul>
+            <li data-go="../python/pygame/setup.html">Setting Up</li>
+            <li data-go="../python/pygame/window.html">Window</li>
+            <li data-go="../python/pygame/images.html">Images</li>
+            <li data-go="../python/pygame/text.html">Text</li>
+            <li data-go="../python/pygame/k-input.html">Keyboard Input</li>
+            <li data-go="../python/pygame/collision.html">Collision</li>
+        </ul>
+        </div>
+        </div>
+    <div>
+    <div id="content">
+    <!-- banner -->
+    <div id="banner">
+        <div id="btext">
+            <img src="/img/icon-t.png" alt="">
+            <div>
+                <h1>Loops</h1>
+                <p>CodeStacks - Python</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section">
+        <h1>Abstract</h1>
+        <p>
+            Ever gotten tired of typing the 
+            same code over and over again 
+            multiple times in a sequence? 
+            Well no problem! You can easily 
+            automate this process with what's 
+            called 'for loops'. What they do 
+            is that they repeat a certain 
+            chunk of code over and over again 
+            for a specified amount of times. 
+            You can also create infinite 
+            loops too (aka. while loops).
+        </p>
+    </div>
+
+    <div class="section">
+        <h1>Overview</h1>
+        <p>
+            Loops in Python are useful for repeating certain segments of code for a specified amount of times, or indefinitely. This can be done using:
+            <c>for i in range(10)</c>.
+            <br><br>
+        The code mentioned above basically loops anything below it ten times. If you were to print <c>i</c> to the output box in each iteration, you would get <c>0</c> to <c>9</c>, printed in order. Python when counting always starts at zero. Unless you want it to print <c>i</c> and have it start from <c>1</c>, you can just do this:
+        </p>
+
+<pre><code class="lang-python">for i in range(10):
+    print(i + 1)
+</code></pre>
+
+<p>
+    <span class="material-symbols-rounded">
+warning
+</span><span style="color: var(--warning);">NOTE:</span><br>
+<span style="margin-left: 20px;">
+    Any code referring to <c>i</c> will only 
+    work inside the loop. Otherwise, you'll 
+    have to have had already defined the value 
+    for <c>i</c>. Also, <c>i</c> can be any 
+    letter, but <c>i</c> is usually 
+    preferred.
+</span>
+</p>
+        </p>
+    </div>
+
+    <div class="section">
+        <h1>Basic Loops</h1>
+        <p>
+            You can create basic loops for a 
+            specified amount of times using 
+            code like this:
+        </p>
+<pre><code class="language-python"># Example:
+for i in range(10):
+    print(i)
+</code></pre>
+
+    <p>
+        The script above basically counts 
+        from <c>0</c> and ends at <c>9</c>, 
+        as that is a total of 10 values. 
+        Then it prints the value of <c>i</c> 
+        to the output box, which should look 
+        like this:
+    </p>
+
+<pre><code class="lang-plain">0
+1
+2
+3
+4
+5
+6
+7
+8
+9</code></pre>
+    </div>
+
+    <div class="section">
+        <h1>Skip Counting</h1>
+        <p>
+            If you are printing values of 
+            <c>i</c> and wanting to print 
+            only values at a specific interval, 
+            then you can simply just use the 
+            same code with some adjustments. 
+            You need three numbers instead of 
+            the original loop count, separated 
+            by commas. Those three numbers, 
+            in respective order are the starting 
+            number, the ending number (excluded 
+            in result), and the number you count 
+            by (if it's <c>2</c>, then it'll be 
+            <c>2, 4, 6, 8, ...</c>). Here's an 
+            example of this using variables to 
+            hold the number data:
+        </p>
+<pre><code class="language-python"># Skip Counting Example:
+start = 2
+stop = 10
+skip = 2
+
+for i range(start, stop, skip):
+    print(i)</code></pre>
+        <br>
+        
+        <p>
+            The output should look like this:
+        </p>
+
+<pre><code class="lang-plain">2
+4
+6
+8</code></pre>
+
+<p>
+    You can change these values, (2, 10, 2), 
+    to any number(s), and will pretty much 
+    do similar things. Just make sure the 
+    middle value is the largest of the lot, 
+    because you won't be starting at a 
+    number, and skip count to a number by 
+    a larger number (e.g. counting to 10, 
+    skip-counting by 15, which makes no 
+    sense).
+    <br><br>
+    You also don't need to have the variables, 
+    just, the actual numbers in there works 
+    just fine.
+</p>
+</div>
+
+<div class="section">
+    <h1>While Loops</h1>
+    <p>
+        While you can create loops that iterate 
+        over a specified amount of times, you 
+        can also build loops that loop, forever. 
+        The only issue is that to get it to 
+        stop running is to break out of it 
+        using the keyword, break on its own 
+        line within the loop.
+        <br><br>
+        Past the explanation, how <i>do</i> you 
+        make infinite loops? It's simple. You 
+        just have to add this:
+    </p>
+
+<pre><code class="lang-python">while True:
+    # Add some code here...
+</code></pre>
+
+    <p>
+        Now that you've created your infinite 
+        loop, you need a way to close it. 
+        You can do this by using conditional 
+        breaks, which means, having an if/else 
+        statement that checks for something, 
+        then breaks out of the loop if the 
+        conditions are met. How do you do 
+        this?
+        <br><br>Well here's an example.
+    </p>
+<pre><code class="lang-python">x = 0
+
+while x < 5:
+    print(x)
+    x += 1</code></pre>
+</div>
+
+<div class="section">
+    <h1>Breaking Out of Loops</h1>
+    <p>
+        Breaks are how you exit out of a loop 
+        if for example, a condition for an 
+        if/else statement is met. You can 
+        use breaks to stop infinite while 
+        loops from running forever and 
+        causing RAM and data issues on 
+        your device. An easy fix is the 
+        break command. It's easy to implement, 
+        as you only need to have it on its 
+        own line in a loop or statement and 
+        it closes the loop early.
+        <br><br>
+        Here's how you can use it:
+    </p>
+
+<pre><code class="lang-python">x = 0
+
+while x < 5:
+if x > 3:
+    break
+
+# Onto the next line if x is less than 3.
+    print(x)
+    x += 1</code></pre>
+
+    <p>
+        ... essentially, now, this loop 
+        still counts from <c>0</c> to 
+        <c>4</c>, (and prints the results), 
+        but this time, we're checking if the 
+        variable, <c>x</c>, has a value 
+        greater than <c>2</c>, then breaking 
+        out of the loop if that's the case, 
+        which stops the code.
+    </p>
+</div>
+
+<div class="section">
+    <h1>Moving on with CONTINUE</h1>
+    <p>
+        Similar to <c>break</c>, the continue 
+        command works exactly the same. 
+        The only difference is instead of 
+        breaking out of the loop, it just 
+        lets the loop know that it has to 
+        skip the current iteration of code 
+        in the loop and move on to the next. 
+        You can use it just like this:
+    </p>
+
+<pre><code class="lang-python">x = 0
+
+while x < 5:
+if x == 3:
+    continue
+
+# Onto the next line if x is less than 3.
+    print(x)
+    x += 1</code></pre>
+
+    <p>
+        The way this code works is now, 
+        instead of breaking out of the 
+        loop when <c>x</c> is greater than 
+        <c>3</c> (e.g. <c>4</c> in this 
+        scenario), we check if <c>x</c> 
+        is equal to <c>3</c>. And if it 
+        is, then we move on to the next 
+        iteration in the loop, ending with 
+        <c>3</c> not being printed at all:
+    </p>
+
+<pre><code class="lang-plain">0
+1
+2
+4</code></pre>
+</div>
+
+<div class="section">
+    <h1>Debugging Loops</h1>
+    <p>
+        There will come an instance where 
+        your code breaks due to lag. A 
+        major factor is infinite loops. 
+        In cases like this, you'll need 
+        to check for any while loops in 
+        your code. You can easily do this 
+        by hitting <c>Ctrl</c>+<c>F</c> on 
+        Windows or <c>⌘</c>+<c>F</c> on 
+        MacOS. That will most likely open 
+        up a search menu where you can 
+        search <c>while</c>, which can 
+        bring up potential instances of 
+        any <c>while</c> loops.
+        <br><br>
+        Then check, do you ever close those 
+        loops? Because in order to close them, 
+        the loop will need an end, either by 
+        maximum iterations from embedded 'if' 
+        statements,<br>(e.g. <c>while var < 5</c>), or 
+        using <c>break</c>. If none are there, then 
+        adding either one or both is the way 
+        to fix the issue.
+    </p>
+</div>
+
+    <!-- footer -->
+    <div class="section">
+        <h2>CodeStacks.</h2>
+        <p>
+            Learn to code. 
+            <br>
+            &copy CodeStacks, 2025-<span id="year">20XX</span>.
+            <br>
+            All Rights Reserved.
+        </p>
+    </div>
+    </div>
+    </div>
+</div>
+</body>
+<script src="../../index.js"></script>
+<script src="../../code/prism.js"></script>
+</html>

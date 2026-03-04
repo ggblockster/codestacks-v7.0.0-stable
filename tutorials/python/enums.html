@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeStacks - Python Enumerators</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/code/prism.css">
+    <link rel="shortcut icon" href="/img/icon-f.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=warning" />
+</head>
+<body>
+    <ul class='navbar'>
+    <li class='uri'>
+    <a href='/index.html'
+    ><img
+    src='/img/icon-t.png'
+    alt=''
+    class='site-icon'
+    /></a>
+    <a>CodeStacks</a>
+    </li>
+    <li>
+    <a href='/index.html'><b>Home</b></a>
+    </li>
+    <li><a href='/index.html#tutorials'>Tutorials</a></li>
+    <li><a href='/index.html#about'>About</a></li>
+    </ul>
+
+<div class="overlay">
+        <div id="table">
+            <button id="closeBar" class="material-icons">
+                close
+            </button>
+            <h1>Python</h1>
+            <div id="scroll">
+            <h3>Basic Python</h3>
+            <ul>
+                <li data-go="/tutorials/python.html">Introduction</li>
+                <li data-go="/tutorials/python/basicsyntax.html">Basic Syntax</li>
+                <li data-go="/tutorials/python/operators.html">Operators</li>
+                <li data-go="/tutorials/python/variables.html">Variables</li>
+                <li data-go="/tutorials/python/comments.html">Comments</li>
+                <li data-go="/tutorials/python/ifelsestatements.html">If/Else Statements</li>
+                <li data-go="/tutorials/python/loops.html">Loops</li>
+                <li data-go="/tutorials/python/functions.html">Functions</li>
+                <li data-go="/tutorials/python/arrays.html">Arrays</li>
+                <li data-go="/tutorials/python/libraries.html">Libraries</li>
+                <li data-go="/tutorials/python/colours.html">Colours</li>
+                <li data-go="/tutorials/python/dictionaries.html">Dictionaries</li>
+                <li data-go="/tutorials/python/enums.html">Enumerators</li>
+                <li data-go="/tutorials/python/classes.html">Classes</li>
+                <li data-go="/tutorials/python/exceptions.html">Exception Handling</li>
+                <li data-go="/tutorials/python/filereading.html">File I/O Reading</li>
+            </ul>
+            <h3>Pygame</h3>
+            <ul>
+                <li data-go="/tutorials/python/pygame/setup.html">Setting Up</li>
+                <li data-go="/tutorials/python/pygame/window.html">Window</li>
+                <li data-go="/tutorials/python/pygame/images.html">Images</li>
+                <li data-go="/tutorials/python/pygame/text.html">Text</li>
+                <li data-go="/tutorials/python/pygame/k-input.html">Keyboard Input</li>
+                <li data-go="/tutorials/python/pygame/collision.html">Collision</li>
+            </ul>
+            </div>
+        </div>
+
+        <button id="openTable"
+        class="material-icons">
+            arrow_right
+        </button>
+    </div>
+
+<div id="screen">
+<div id="table2">
+        <h1>Python</h1>
+        <div id="scroll2">
+        <h3>Basic Python</h3>
+        <ul>
+            <li data-go="/tutorials/python.html">Introduction</li>
+            <li data-go="/tutorials/python/basicsyntax.html">Basic Syntax</li>
+            <li data-go="/tutorials/python/operators.html">Operators</li>
+            <li data-go="/tutorials/python/variables.html">Variables</li>
+            <li data-go="/tutorials/python/comments.html">Comments</li>
+            <li data-go="/tutorials/python/ifelsestatements.html">If/Else Statements</li>
+            <li data-go="/tutorials/python/loops.html">Loops</li>
+            <li data-go="/tutorials/python/functions.html">Functions</li>
+            <li data-go="/tutorials/python/arrays.html">Arrays</li>
+            <li data-go="/tutorials/python/libraries.html">Libraries</li>
+            <li data-go="/tutorials/python/colours.html">Colours</li>
+            <li data-go="/tutorials/python/dictionaries.html">Dictionaries</li>
+            <li data-go="/tutorials/python/enums.html">Enumerators</li>
+            <li data-go="/tutorials/python/classes.html">Classes</li>
+            <li data-go="/tutorials/python/exceptions.html">Exception Handling</li>
+            <li data-go="/tutorials/python/filereading.html">File I/O Reading</li>
+        </ul>
+        <h3>Pygame</h3>
+        <ul>
+            <li data-go="/tutorials/python/pygame/setup.html">Setting Up</li>
+            <li data-go="/tutorials/python/pygame/window.html">Window</li>
+            <li data-go="/tutorials/python/pygame/images.html">Images</li>
+            <li data-go="/tutorials/python/pygame/text.html">Text</li>
+            <li data-go="/tutorials/python/pygame/k-input.html">Keyboard Input</li>
+            <li data-go="/tutorials/python/pygame/collision.html">Collision</li>
+        </ul>
+        </div>
+        </div>
+    <div>
+    <div id="content">
+    <!-- banner -->
+    <div id="banner">
+        <div id="btext">
+            <img src="/img/icon-t.png" alt="">
+            <div>
+                <h1>Enums</h1>
+                <p>CodeStacks - Python</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section">
+        <h1>Abstract</h1>
+        <p>
+            Like dictionaries, you can access 
+            values of enums with a key so you 
+            can easily organise your data in 
+            one place of your code. The difference, 
+            is that enums aren't built in to Python 
+            but are from a library, <c>enum</c>.
+        </p>
+    </div>
+
+    <div class="section">
+        <h1>Overview</h1>
+        <p>
+            In order to create an enum, first, 
+            let's import the <c>Enum</c> module 
+            from the <c>enum</c> library.
+        </p>
+
+<pre><code class="lang-python">from enum import enum
+</code></pre>
+
+    <p>
+        Now that the module has been imported, let's 
+        create an enum. In Python, to create 
+        enums, you need to create a class with 
+        <c>Enum</c> as the parameter.
+    </p>
+
+<pre><code class="lang-python">from enum import Enum
+
+class season(Enum):
+    SPRING = 1
+    SUMMER = 2
+    AUTUMN = 3
+    WINTER = 4
+</code></pre>
+    
+    </div>
+
+    <div class="section">
+        <h1>Accessing Values</h1>
+        <p>
+            Now that you have an enum 
+            set up, let's look at how you 
+            access the values inside the 
+            enum. To access the value, 
+            you need to refer to the name of 
+            the enum, then the name of the 
+            value, then an optional 
+            property of it that you 
+            want to access.
+        </p>
+<pre><code class="language-python"># Example:
+from enum import Enum
+
+class Season(Enum):
+    SPRING = 1
+    SUMMER = 2
+    AUTUMN = 3
+    WINTER = 4
+
+print(Season.SPRING.name) # "SPRING"
+print(Season.AUTUMN.value) # 3
+print(type(Season.SPRING)) # &lt;enum>
+print(list(Season)) # All in a list.
+</code></pre>
+
+    <p>
+        And the output:
+    </p>
+
+<pre><code class="lang-plain">SPRING
+3
+&lt;enum 'Season'>
+[&lt;Season.SPRING: 1>, &lt;Season.SUMMER: 2>, 
+&lt;Season.AUTUMN: 3>, &lt;Season.WINTER: 4>]</code></pre>
+    <p>
+        So the properties are <c>name</c> and 
+        <c>value</c>, which return the 
+        name and value you set for the key 
+        you specify.
+        <br><br>
+        Then, there's <c>type()</c> and 
+        <c>list()</c>. Inside <c>type()</c>, 
+        you add the key you want the details 
+        from, and Python will output the 
+        relative source code. For <c>list()</c>, 
+        you only have to specify the name of 
+        the enum and Python will output 
+        the details of every key in that 
+        enum.
+    </p>
+    </div>
+
+    <div class="section">
+        <h1>Iterations</h1>
+        <p>
+            You can also use loops to 
+            display all the values of enumerators.
+            <br>
+            In order to do that, you need to 
+            first define the enum, then the 
+            name of the enum inside a loop, 
+            replacing <c>i</c> with something 
+            more fitting. However, you also 
+            might need the value of <c>i</c> 
+            itself, so you can tag <c>.value</c> 
+            at the end, so that Python will 
+            output the index of the key instead 
+            of the value it holds.
+        </p>
+
+<pre><code class="lang-python"># Iterating over Values:
+from enum import Enum
+
+class Season(Enum):
+    SPRING = 1
+    SUMMER = 2
+    AUTUMN = 3
+    WINTER = 4
+
+for season in Season:
+    print(f"{season.value} - {season.name}.")
+</code></pre>
+
+<p>
+    Output:
+</p>
+
+<pre><code class="lang-plain">1 - SPRING.
+2 - SUMMER.
+3 - AUTUMN.
+4 - WINTER.
+</code></pre>
+    </div>
+
+    <!-- footer -->
+    <div class="section">
+        <h2>CodeStacks.</h2>
+        <p>
+            Learn to code. 
+            <br>
+            &copy CodeStacks, 2025-<span id="year">20XX</span>.
+            <br>
+            All Rights Reserved.
+        </p>
+    </div>
+    </div>
+    </div>
+</div>
+</body>
+<script src="/index.js"></script>
+<script src="/code/prism.js"></script>
+</html>

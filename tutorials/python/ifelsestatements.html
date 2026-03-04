@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeStacks - Python If/Else Statements</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/code/prism.css">
+    <link rel="shortcut icon" href="/img/icon-f.png" type="image/x-icon">
+</head>
+<body>
+    <ul class='navbar'>
+    <li class='uri'>
+    <a href='/index.html'
+    ><img
+    src='/img/icon-t.png'
+    alt=''
+    class='site-icon'
+    /></a>
+    <a>CodeStacks</a>
+    </li>
+    <li>
+    <a href='/index.html'><b>Home</b></a>
+    </li>
+    <li><a href='/index.html#tutorials'>Tutorials</a></li>
+    <li><a href='/index.html#about'>About</a></li>
+    </ul>
+
+<div class="overlay">
+        <div id="table">
+            <button id="closeBar" class="material-icons">
+                close
+            </button>
+            <h1>Python</h1>
+            <div id="scroll">
+            <h3>Basic Python</h3>
+            <ul>
+                <li data-go="../python.html">Introduction</li>
+                <li data-go="../python/basicsyntax.html">Basic Syntax</li>
+                <li data-go="../python/operators.html">Operators</li>
+                <li data-go="../python/variables.html">Variables</li>
+                <li data-go="../python/comments.html">Comments</li>
+                <li data-go="../python/ifelsestatements.html">If/Else Statements</li>
+                <li data-go="../python/loops.html">Loops</li>
+                <li data-go="../python/functions.html">Functions</li>
+                <li data-go="../python/arrays.html">Arrays</li>
+                <li data-go="../python/libraries.html">Libraries</li>
+                <li data-go="../python/colours.html">Colours</li>
+                <li data-go="../python/dictionaries.html">Dictionaries</li>
+                <li data-go="../python/enums.html">Enumerators</li>
+                <li data-go="../python/classes.html">Classes</li>
+                <li data-go="../python/exceptions.html">Exception Handling</li>
+                <li data-go="../python/filereading.html">File I/O Reading</li>
+            </ul>
+            <h3>Pygame</h3>
+            <ul>
+                <li data-go="../python/pygame/setup.html">Setting Up</li>
+                <li data-go="../python/pygame/window.html">Window</li>
+                <li data-go="../python/pygame/images.html">Images</li>
+                <li data-go="../python/pygame/text.html">Text</li>
+                <li data-go="../python/pygame/k-input.html">Keyboard Input</li>
+                <li data-go="../python/pygame/collision.html">Collision</li>
+            </ul>
+            </div>
+        </div>
+
+        <button id="openTable"
+        class="material-icons">
+            arrow_right
+        </button>
+    </div>
+
+<div id="screen">
+<div id="table2">
+        <h1>Python</h1>
+        <div id="scroll2">
+        <h3>Basic Python</h3>
+        <ul>
+            <li data-go="../python.html">Introduction</li>
+            <li data-go="../python/basicsyntax.html">Basic Syntax</li>
+            <li data-go="../python/operators.html">Operators</li>
+            <li data-go="../python/variables.html">Variables</li>
+            <li data-go="../python/comments.html">Comments</li>
+            <li data-go="../python/ifelsestatements.html">If/Else Statements</li>
+            <li data-go="../python/loops.html">Loops</li>
+            <li data-go="../python/functions.html">Functions</li>
+            <li data-go="../python/arrays.html">Arrays</li>
+            <li data-go="../python/libraries.html">Libraries</li>
+            <li data-go="../python/colours.html">Colours</li>
+            <li data-go="../python/dictionaries.html">Dictionaries</li>
+            <li data-go="../python/enums.html">Enumerators</li>
+            <li data-go="../python/classes.html">Classes</li>
+            <li data-go="../python/exceptions.html">Exception Handling</li>
+            <li data-go="../python/filereading.html">File I/O Reading</li>
+        </ul>
+        <h3>Pygame</h3>
+        <ul>
+            <li data-go="../python/pygame/setup.html">Setting Up</li>
+            <li data-go="../python/pygame/window.html">Window</li>
+            <li data-go="../python/pygame/images.html">Images</li>
+            <li data-go="../python/pygame/text.html">Text</li>
+            <li data-go="../python/pygame/k-input.html">Keyboard Input</li>
+            <li data-go="../python/pygame/collision.html">Collision</li>
+        </ul>
+        </div>
+        </div>
+    <div>
+    <div id="content">
+    <!-- banner -->
+    <div id="banner">
+        <div id="btext">
+            <img src="/img/icon-t.png" alt="">
+            <div>
+                <h1>If/Else Statements</h1>
+                <p>CodeStacks - Python</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section">
+        <h1>Abstract</h1>
+        <p>
+            'If' statements in Python is really 
+            important because they are the sole 
+            reason as to how you can check for 
+            logic. As mentioned before, 
+            if-statements return booleans and 
+            can run certain code based on the 
+            required query or a certain group 
+            of situations where you'd want 
+            certain code to run.
+        </p>
+    </div>
+
+    <div class="section">
+        <h1>Overview</h1>
+        <p>
+            When dealing with if-statements, 
+            you need to understand these 
+            three key words. <c>if</c>, 
+            <c>elif</c>, and <c>else</c>. 
+            The way that you should structure 
+            the statement is by starting with 
+            if, then checking something, then 
+            placing a <c>:</c> immediately 
+            after. Python will automatically 
+            create an indent for you in the 
+            editor, and then you run your 
+            code. Here's an example:
+        </p>
+
+<pre><code class="lang-python">var = 2
+
+if var == 2:
+    print("var equals 2")
+</code></pre>
+    </div>
+
+    <div class="section">
+        <h1>Syntax</h1>
+        <p>
+            In case this isn't obvious, 
+            it is REALLY important that 
+            when checking for something 
+            (using ifs), then you use two equals 
+            signs: <c>==</c>, but when 
+            setting variable data, only a 
+            single equal's sign is required. 
+            This is extremely specific, 
+            so here's a simpler way of 
+            explaining this:
+        </p>
+<pre><code class="language-python"># Syntax:
+var = "value" # Setting values.
+
+if var == "value": # Checking values.
+    print(var)
+</code></pre>
+    </div>
+
+    <div class="section">
+        <h1>"Else" Branches</h1>
+        <p>
+            Well, what if you needed two 
+            conditions, where if the case 
+            you need isn't true, but 
+            something else needs to happen 
+            in that situation? Then the 
+            <c>else</c> tag is perfect for 
+            this situation. Here's how you 
+            can use it:
+        </p>
+<pre><code class="language-python"># The ELSE Branch:
+var = 2
+
+if var == 2:
+    print("Case 1")
+else:
+    print("Case 2")</code></pre>
+
+    <p>
+        ... essentially what's happening in 
+        the code above is that the code is 
+        setting the variable <c>var</c> to 
+        <c>2</c>, and then checking: is 
+        <c>var</c> holding the value 
+        <c>2</c>? Then, if it is, then 
+        it prints Case 1 to the output 
+        window. If <c>var</c> is not 
+        <c>2</c>, then the code prints 
+        Case 2 to the output window 
+        instead. This can be adjusted 
+        accordingly to your needs.
+    </p>
+</div>
+
+<div class="section">
+    <h1>Multiple Conditions</h1>
+    <p>
+        There will be times when you 
+        need more than two conditions, 
+        but how do you do that? It's 
+        simple. All you have to do is 
+        use the <c>elif</c> command in 
+        between the <c>if</c> and 
+        <c>else</c> statements. 
+        <br><br>
+        That put in code looks like this:
+    </p>
+<pre><code class="lang-python">var = 20
+
+if var == 20:
+    print("Case 1")
+elif var == 10:
+    print("Case 2")
+else:
+    print("Case 3")
+</code></pre>
+    <p>
+        ... and that's literally just an 
+        example of how you can apply <c>elif</c> 
+        in your Python code. elif can be REALLY 
+        helpful at times because you can just 
+        save yourself from a lot of unnecessary 
+        if-statements. And the best part? You 
+        don't even need the else section 
+        &mdash; you can just not put it 
+        entirely, and you're just left with 
+        a simple if-statement branch with no 
+        complications.
+    </p>
+</div>
+
+<div class="section">
+    <h1>Elif Statements</h1>
+    <p>
+        As stated before, these are completely 
+        optional, but when needed, worded like 
+        <c>elif</c>, in lowercase. Python 
+        keyword syntax is extremely 
+        case-sensitive. Here, below is an 
+        example of <c>elif</c> used in an 
+        if-statement without an <c>else</c> 
+        to finish it off. Even if there isn't 
+        a final <c>else</c> check at the end, 
+        it is still, not needed unless you 
+        would like to run specific code if 
+        something is not true.
+    </p>
+
+<pre><code class="lang-python">var = 20
+
+if var == 20:
+    print("Case 1")
+elif var == 10:
+    print("Case 2")
+</code></pre>
+<p>
+    ... this is pretty much the same example 
+    as before, but edited to show that 
+    ending with <c>elif</c> is possible 
+    and also valid.
+</p>
+</div>
+    <!-- footer -->
+    <div class="section">
+        <h2>CodeStacks.</h2>
+        <p>
+            Learn to code. 
+            <br>
+            &copy CodeStacks, 2025-<span id="year">20XX</span>.
+            <br>
+            All Rights Reserved.
+        </p>
+    </div>
+    </div>
+    </div>
+</div>
+</body>
+<script src="../../index.js"></script>
+<script src="../../code/prism.js"></script>
+</html>

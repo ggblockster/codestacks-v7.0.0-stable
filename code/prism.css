@@ -1,0 +1,198 @@
+/* PrismJS 1.30.0
+https://prismjs.com/download#themes=prism-dark&languages=markup+css+clike+javascript+c+csharp+cpp+gml+gdscript+java+lua+markup-templating+php+python+r+ruby+rust&plugins=line-numbers+toolbar+copy-to-clipboard */
+
+:root {
+  /* Background layers */
+  --bg: #0f1115;         /* page background */
+  --surface: #161a22;    /* card, pre blocks, panels */
+  --surface-2: #1d2230;  /* slightly higher layer, e.g., sidebar or headers */
+
+  /* Text */
+  --text: #e6e6e6;       /* main text */
+  --para: #bcc0d6;
+  --muted: #9aa4b2;      /* secondary text, labels, descriptions */
+
+  /* Accent */
+  --accent: #5da9ff;     /* links, buttons, small highlights */
+
+  /* Borders / Dividers */
+  --border: #2a2f3a;     /* subtle separation */
+
+  /* Feedback */
+  --error: #ef4444;      /* errors / destructive */
+  --warning: #f59e0b;    /* warnings / cautions */
+
+  /* fonts */
+  --main: "IBM Plex Sans";
+  --code: "Cascadia Code", monospace;
+  --icons: "Material Icons";
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #abb2bf; /* editor.foreground */
+  background: none;
+  font-family: Consolas, Monaco, "Courier New", monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  text-shadow: none;
+  white-space: pre;
+  tab-size: 4;
+}
+
+/* Code Block */
+pre[class*="language-"] {
+  background: var(--surface); /* editor.background */
+  padding: 16px;
+  margin: 0.8em 0;
+  margin-left: 30px;
+  overflow: auto;
+  border-radius: 8px;
+  width: calc(65vw + 21px);
+  overflow-x: auto;
+}
+
+/* Inline Code */
+:not(pre) > code[class*="language-"] {
+  background: var(--surface);
+  padding: 3px 6px;
+  border-radius: 6px;
+  white-space: normal;
+}
+
+/* =========================================================
+   Syntax Colors (Matched to VS Code One Dark Pro)
+   ========================================================= */
+
+/* Comments */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #5c6370;
+  font-style: italic;
+}
+
+/* Keywords: def, class, return, if, else */
+.token.keyword {
+  color: #c678dd;
+}
+
+/* Strings */
+.token.string,
+.token.char {
+  color: #98c379;
+}
+
+/* Numbers */
+.token.number {
+  color: #d19a66;
+}
+
+/* Builtins: print, len, range */
+.token.builtin {
+  color: #61afef;
+}
+
+/* Function names */
+.token.function {
+  color: #61afef;
+}
+
+/* Class names / types */
+.token.class-name {
+  color: #e5c07b;
+}
+
+/* Operators */
+.token.operator {
+  color: #56b6c2;
+}
+
+/* Constants / booleans */
+.token.boolean,
+.token.constant {
+  color: #d19a66;
+}
+
+/* Properties / attributes */
+.token.property,
+.token.attr-name {
+  color: #e06c75;
+}
+
+/* Regex */
+.token.regex {
+  color: #56b6c2;
+}
+
+/* Important */
+.token.important {
+  color: #e5c07b;
+  font-weight: bold;
+}
+
+/* Punctuation (neutral like VS Code without bracket coloring) */
+.token.punctuation {
+  color: #abb2bf;
+}
+
+/* =========================================================
+   Line Numbers Plugin
+   ========================================================= */
+
+pre[class*="language-"].line-numbers {
+  padding-left: 3.5em;
+}
+
+.line-numbers .line-numbers-rows {
+  border-right: 1px solid #3e4451;
+  background: #21252b;
+}
+
+.line-numbers-rows > span:before {
+  color: #5c6370;
+}
+
+/* =========================================================
+   Toolbar Plugin (Restored Proper Layout)
+   ========================================================= */
+
+div.code-toolbar {
+  position: relative;
+}
+
+div.code-toolbar > .toolbar {
+  position: absolute;
+  top: 0.4em;
+  right: 0.4em;
+  z-index: 10;
+
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+div.code-toolbar:hover > .toolbar,
+div.code-toolbar:focus-within > .toolbar {
+  opacity: 1;
+}
+
+div.code-toolbar > .toolbar > .toolbar-item {
+  display: inline-block;
+}
+
+div.code-toolbar > .toolbar > .toolbar-item > button {
+  background: #2c313c;
+  transition: background 0.2s ease;
+  color: #abb2bf;
+  border: 1px solid #3e4451;
+  border-radius: 6px;
+  padding: 4px 8px;
+  cursor: pointer;
+
+  font-family: "Material Icons";
+}
+
+div.code-toolbar > .toolbar > .toolbar-item > button:hover {
+  background: #3e4451;
+}

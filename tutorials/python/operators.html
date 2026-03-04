@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeStacks - Python Operations</title>
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="../../code/prism.css">
+    <link rel="shortcut icon" href="../../img/icon-f.png" type="image/x-icon">
+</head>
+<body>
+    <ul class='navbar'>
+    <li class='uri'>
+    <a href='../../index.html'
+    ><img
+    src='../../img/icon-t.png'
+    alt=''
+    class='site-icon'
+    /></a>
+    <a>CodeStacks</a>
+    </li>
+    <li>
+    <a href='../../index.html'><b>Home</b></a>
+    </li>
+    <li><a href='../../index.html#tutorials'>Tutorials</a></li>
+    <li><a href='../../index.html#about'>About</a></li>
+    </ul>
+
+<div class="overlay">
+        <div id="table">
+            <button id="closeBar" class="material-icons">
+                close
+            </button>
+            <h1>Python</h1>
+            <div id="scroll">
+            <h3>Basic Python</h3>
+            <ul>
+                <li data-go="../python.html">Introduction</li>
+                <li data-go="../python/basicsyntax.html">Basic Syntax</li>
+                <li data-go="../python/operators.html">Operators</li>
+                <li data-go="../python/variables.html">Variables</li>
+                <li data-go="../python/comments.html">Comments</li>
+                <li data-go="../python/ifelsestatements.html">If/Else Statements</li>
+                <li data-go="../python/loops.html">Loops</li>
+                <li data-go="../python/functions.html">Functions</li>
+                <li data-go="../python/arrays.html">Arrays</li>
+                <li data-go="../python/libraries.html">Libraries</li>
+                <li data-go="../python/colours.html">Colours</li>
+                <li data-go="../python/dictionaries.html">Dictionaries</li>
+                <li data-go="../python/enums.html">Enumerators</li>
+                <li data-go="../python/classes.html">Classes</li>
+                <li data-go="../python/exceptions.html">Exception Handling</li>
+                <li data-go="../python/filereading.html">File I/O Reading</li>
+            </ul>
+            <h3>Pygame</h3>
+            <ul>
+                <li data-go="../python/pygame/setup.html">Setting Up</li>
+                <li data-go="../python/pygame/window.html">Window</li>
+                <li data-go="../python/pygame/images.html">Images</li>
+                <li data-go="../python/pygame/text.html">Text</li>
+                <li data-go="../python/pygame/k-input.html">Keyboard Input</li>
+                <li data-go="../python/pygame/collision.html">Collision</li>
+            </ul>
+            </div>
+        </div>
+
+        <button id="openTable"
+        class="material-icons">
+            arrow_right
+        </button>
+    </div>
+
+<div id="screen">
+<div id="table2">
+        <h1>Python</h1>
+        <div id="scroll2">
+        <h3>Basic Python</h3>
+        <ul>
+            <li data-go="../python.html">Introduction</li>
+            <li data-go="../python/basicsyntax.html">Basic Syntax</li>
+            <li data-go="../python/operators.html">Operators</li>
+            <li data-go="../python/variables.html">Variables</li>
+            <li data-go="../python/comments.html">Comments</li>
+            <li data-go="../python/ifelsestatements.html">If/Else Statements</li>
+            <li data-go="../python/loops.html">Loops</li>
+            <li data-go="../python/functions.html">Functions</li>
+            <li data-go="../python/arrays.html">Arrays</li>
+            <li data-go="../python/libraries.html">Libraries</li>
+            <li data-go="../python/colours.html">Colours</li>
+            <li data-go="../python/dictionaries.html">Dictionaries</li>
+            <li data-go="../python/enums.html">Enumerators</li>
+            <li data-go="../python/classes.html">Classes</li>
+            <li data-go="../python/exceptions.html">Exception Handling</li>
+            <li data-go="../python/filereading.html">File I/O Reading</li>
+        </ul>
+        <h3>Pygame</h3>
+        <ul>
+            <li data-go="../python/pygame/setup.html">Setting Up</li>
+            <li data-go="../python/pygame/window.html">Window</li>
+            <li data-go="../python/pygame/images.html">Images</li>
+            <li data-go="../python/pygame/text.html">Text</li>
+            <li data-go="../python/pygame/k-input.html">Keyboard Input</li>
+            <li data-go="../python/pygame/collision.html">Collision</li>
+        </ul>
+        </div>
+        </div>
+    <div>
+    <div id="content">
+    <!-- banner -->
+    <div id="banner">
+        <div id="btext">
+            <img src="../../img/icon-t.png" alt="">
+            <div>
+                <h1>Operators</h1>
+                <p>CodeStacks - Python</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section">
+        <h1>Abstract</h1>
+        <p>
+            When coding in Python, there's a 
+            set of operations you will find 
+            yourself using a lot. These 
+            operations on practical use look 
+            just like the ones you would use 
+            in standard math &mdash; however, 
+            there are some operations you 
+            cannot type normally, which are 
+            then done in other ways.
+        </p>
+    </div>
+
+    <div class="section">
+        <h1>Overview</h1>
+        <p>
+            When coding in Python, syntax is 
+            important, but you will sometimes 
+            find yourself needing to manipulate 
+            some values stored in other forms 
+            of data, like variables (more on 
+            that here).
+            <br><br>
+            All operations in Python run using 
+            what's known as the order of 
+            operations. You should already 
+            know how this works, but in short, 
+            from left to right, any content 
+            in brackets first, then indexes 
+            or other things like roots second, 
+            then multiplication and division 
+            third, and finally, addition 
+            and subtraction last. This is 
+            the exact same order that Python 
+            does its calculations.
+        </p>
+    </div>
+
+    <div class="section">
+        <h1>Basic Operations</h1>
+        <p>
+            There are a handful set of basic 
+            operations you should be familiar 
+            with; however, some might be 
+            different from your standard set 
+            as multiplication is not <c>&times;</c> 
+            but <c>*</c> (asterisk) instead. 
+            Below is how you would type 
+            them in.
+        </p>
+<pre><code class="language-python"># Basic Operators:
++ # Addition
+- # Subtraction
+* # Multiplication
+/ # Division
+</code></pre>
+        <p>
+            &hellip; Those up there are just the 
+            basics. There are more &mdash; and 
+            they are useful at times. Oh, 
+            and the above code snippet isn't 
+            actually valid &mdash; you have to 
+            use it with something to actually 
+            make sure Python doesn't throw 
+            a traceback error.
+        </p>
+    </div>
+
+    <div class="section">
+        <h1>More Operators</h1>
+        <p>
+            Now, we move on past the basics. 
+            The next three operations are 
+            modulus, exponentials, and floor 
+            division.
+        </p>
+
+        <br>
+        <h2>Modulus</h2>
+        <p>
+            Modulus is essentially just a 
+            fancy way of saying '<i>divide 
+            then return the remainder</i>'. 
+            An example of that is having 
+            <c>10 % 3</c>, which returns 
+            <c>1</c>. Below is an example 
+            of how you can use 
+            <i>modulus</i>.
+        </p>
+<pre><code class="language-python"># Print Command:
+var = 10
+var = var % 3
+
+print(var)</code></pre>
+<br><br>
+<p>
+    What the above code does is it sets a variable, <c>var</c>, to the value <c>10</c>, then sets it to the remainder of itself if it was divided by <c>3</c>, then prints the result to the output window, which should be <c>1</c>.
+</p>
+    <br><br>
+    <h2>Exponentials</h2>
+    <p>
+        The easiest way to describe exponentials 
+        are that to take the number before 
+        the operation and bring it to the 
+        power of the second number. That 
+        in code, represented by variables 
+        <c>a</c> and <c>b</c>, (in this 
+        example), representing the first 
+        and second numbers respectively 
+        would look like this:
+    </p>
+
+<pre><code class="language-python">a = 2
+b = 3
+
+result = a ** b
+print(result) # Prints "8".</code></pre>
+
+    <br><br>
+    <h2>Floor Division</h2>
+    <p>
+        Essentially, floor division is when 
+        you take any number and divide it 
+        by another number. Except with 
+        floor division, you now have to 
+        round the result down to the nearest 
+        whole number, as implied by the 
+        word 'floor'. In this example, 
+        we'll use a as the first number, 
+        and we'll divide it by b, and that 
+        value will be held in the variable 
+        result. Then that value will be 
+        printed to the output window.
+    </p>
+    </div>
+
+    <div class="section">
+        <h1>Joint Operations</h1>
+        <p>
+            Sometimes, you might want to 
+            increment a variable's value by 
+            something, but so far, that can be 
+            done with two lines. There are 
+            easier ways. And that way is the 
+            joint operation. It's exactly what 
+            it sounds like. The left is the 
+            desired operator, and the right is 
+            <c>=</c>. For example:
+        </p>
+<pre><code class="language-python"># Incrementation Example:
+x = 5
+x += 5
+
+print(x) # Prints out 10;
+</code></pre>
+    </div>
+
+    <div class="section">
+        <h1>Inequalities</h1>
+        <p>
+            If you wanted to check if 
+            one value is greater than, or less 
+            than another value, you need to use the 
+            appropriate sign on your keyboard: 
+            <br>
+            <c><</c> and <c>></c>, respectively.
+        </p>
+<pre><code class="language-python"># Inequalities:
+x = 5
+y = 2
+
+print(x > y)
+# Outputs "True", as:
+# 5 is greater than 2.
+</code></pre>
+
+    <p>
+        But what about <c><=</c> and
+        <c>>=</c>? Well, those aren't easy 
+        to type without copy-pasting, and just like 
+        many common coding languages, Python does it 
+        with <c style="font-variant-ligatures: none;">
+        <=</c> and <c style="font-variant-ligatures: none;">
+        >=</c>, which do the same thing. The 
+        order is important.
+    </p>
+    </div>
+
+    <!-- footer -->
+    <div class="section">
+        <h2>CodeStacks.</h2>
+        <p>
+            Learn to code. 
+            <br>
+            &copy CodeStacks, 2025-<span id="year">20XX</span>.
+            <br>
+            All Rights Reserved.
+        </p>
+    </div>
+    </div>
+    </div>
+</div>
+</body>
+<script src="../../index.js"></script>
+<script src="../../code/prism.js"></script>
+</html>

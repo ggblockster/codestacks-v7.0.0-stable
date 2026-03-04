@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans:wght=400,500,700&display=swap;");
+@import url("https://fonts.googleapis.com/css?family=Material+Icons");
+@import url("https://fonts.googleapis.com/css?family=Cascadia+Code");
+@import url('/font-awesome-4.6.3/css/font-awesome.min.css');
+
+:root {
+  /* Background layers */
+  --bg: #0f1115;         /* page background */
+  --surface: #161a22;    /* card, pre blocks, panels */
+  --surface-2: #1d2230;  /* slightly higher layer, e.g., sidebar or headers */
+
+  /* Text */
+  --text: #e6e6e6;       /* main text */
+  --para: #bcc0d6;
+  --muted: #9aa4b2;      /* secondary text, labels, descriptions */
+
+  /* Accent */
+  --accent: #5da9ff;     /* links, buttons, small highlights */
+
+  /* Borders / Dividers */
+  --border: #2a2f3a;     /* subtle separation */
+
+  /* Feedback */
+  --error: #ef4444;      /* errors / destructive */
+  --warning: #f59e0b;    /* warnings / cautions */
+
+  /* fonts */
+  --main: "IBM Plex Sans";
+  --code: "Cascadia Code", monospace;
+  --icons: "Material Icons";
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    background: var(--bg);
+        margin-top: 54px;
+}
+
+html {
+    scrollbar-color: var(--border) var(--bg);
+
+}
+
+/* Navbar container */
+ul.navbar {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  list-style: none;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0 20px;
+  background-color: var(--surface);
+  border-bottom: var(--border) 2px solid;
+  width: 100%;
+  box-sizing: border-box;
+  line-height: normal;
+  font-family: var(--main);
+}
+
+/* Title + icon */
+ul.navbar li.uri {
+  display: flex;
+  align-items: center;
+  color: white;
+  line-height: normal;
+}
+
+/* Text next to icon spacing */
+ul.navbar li.uri b {
+  margin-left: var(--icon-text-gap); /* precise control */
+}
+
+/* Push links to the right */
+ul.navbar li.uri + li {
+  margin-left: auto; /* first link after the title goes to the right */
+line-height: normal;
+}
+
+/* Links styling */
+ul.navbar li a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 10px 16px;
+  line-height: normal;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+/* Text links hover (excluding icons) */
+ul.navbar li a.link:hover {
+  background-color: var(--bg);
+}
+
+/* Icon sizing */
+.site-icon {
+  height: 28px;
+  width: auto;
+  display: inline-block;
+  padding: 0;
+  transform: translateY(0.1em);
+}
+
+/* -- banner -- */
+#banner {
+    width: 100%;
+    height: calc(200px + 3vw);
+    background: var(--surface-2);
+    color: var(--text);
+    font-family: var(--main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: var(--border) 3px solid;
+
+    #btext {
+        display: flex;
+        gap: 10px;
+        border: var(--border) 2px solid;
+        padding: 20px;
+        border-radius: 20px;
+        corner-shape: squircle;
+
+        p {
+            color: var(--muted);
+        }
+
+        img {
+            height: 4em;
+            transform: translateY(0.2em)
+        }
+    }
+}
+
+.section {
+    padding: 40px;
+    color: var(--text);
+    font-family: var(--main);
+    border-bottom: var(--border) 2px solid;
+    a {
+        color: var(--para);
+    }
+
+    p {
+        color: var(--para);
+        max-width: 70vw;
+        border-left: 2px solid var(--border);
+        padding-left: 10px;
+        margin-left: 20px;
+        margin-top: 10px;
+
+        c {
+            font-size: 0.9em;
+        }
+    }
+
+    c {
+        background: var(--surface-2);
+        padding: 1px 6px;
+        border-radius: 4px;
+        font-family: var(--code);
+    }
+
+    table {
+        border-collapse: collapse;
+        border: var(--border) 1px solid;
+        margin: 30px;
+    }
+
+    th, td {
+        border: var(--border) 1px solid;
+        padding: 10px 16px;
+    }
+}
+
+#tsect {
+    display: flex;
+    gap: 10px;
+    margin: 30px;
+    flex-wrap: wrap;
+
+    .tbox {
+        padding: 15px;
+        background: var(--surface);
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background 0.3s, outline 0.2s;
+        width: 140px;
+        text-align: center;
+        outline: transparent;
+        
+        img {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-self: center;
+            margin-bottom: 5px;
+            padding-bottom: 10px;
+            border-bottom: var(--border) 2px solid;
+        }
+
+        t {
+            margin: 5px;
+        }
+    }
+
+    .tbox:hover {
+        background: var(--surface-2);
+        outline: var(--accent) 2px solid;
+    }
+
+}
+
+#about, #tutorials {
+    scroll-margin-top: 70px;
+}
+
+#openTable {
+    background: var(--text);
+    color: var(--accent);
+    width: 0.7em;
+    height: 1.5em;
+    z-index: 9999;
+    position: absolute;
+    display: none;
+    font-size: 2.5em;
+    border-radius: 0 8px 8px 0;
+    border: none;
+    cursor: pointer;
+    transform: translateY(40vh);
+}
+
+#openTable.open {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.overlay {
+    display: flex;
+    z-index: 9998;
+    position: fixed;
+}
+
+#table {
+    z-index: 10000;
+    display: none;
+    color: var(--text);
+    font-family: var(--main);
+    background: var(--surface);
+    padding: 30px;
+    width: 270px;
+    border-right: var(--border) 3px solid;
+
+    #closeBar {
+        color: white;
+        background: var(--surface);
+        border: none;
+        width: 1.3em;
+        height: 1.3em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    #closeBar:hover {
+        background: var(--surface-2)
+    }
+    #scroll {
+        height: 72vh;
+        overflow-y: auto;
+        scrollbar-color: var(--border) var(--surface);
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 10px;
+        margin-left: 0;
+        
+        li {
+            padding: 10px 16px;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: background 0.3s;
+        }
+
+        li:hover {
+            background: var(--bg);
+        }
+    }
+
+    h1 {
+        margin-bottom: 15px;
+    }
+}
+
+#table.open {
+    display: flex;
+    flex-direction: column;
+}
+
+#table2 {
+    color: var(--text);
+    font-family: var(--main);
+    background: var(--surface);
+    position: sticky;
+    display: none;
+    top: 54px;
+    padding: 30px;
+    width: 270px;
+    border-right: var(--border) 3px solid;
+    height: 81vh;
+
+    #scroll2 {
+        height: 72vh;
+        overflow-y: auto;
+        scrollbar-color: var(--border) var(--surface);
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 10px;
+        margin-left: 0;
+        
+        li {
+            padding: 10px 16px;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: background 0.3s;
+        }
+
+        li:hover {
+            background: var(--bg);
+        }
+    }
+
+    h1 {
+        margin-bottom: 15px;
+    }
+}
+
+#screen {
+    display: flex;
+}
+
+#table2.open {
+    display: block;
+}
+
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 0;
+
+    vertical-align: -6px;
+    margin: 5px;
+    color: var(--warning);
+}
+
+#errorTable {
+    height: 400px;
+    overflow-y: auto;
+    margin: 10px;
+}

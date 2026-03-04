@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeStacks - Python Variables</title>
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="../../code/prism.css">
+    <link rel="shortcut icon" href="../../img/icon-f.png" type="image/x-icon">
+</head>
+<body>
+    <ul class='navbar'>
+    <li class='uri'>
+    <a href='../../index.html'
+    ><img
+    src='../../img/icon-t.png'
+    alt=''
+    class='site-icon'
+    /></a>
+    <a>CodeStacks</a>
+    </li>
+    <li>
+    <a href='../../index.html'><b>Home</b></a>
+    </li>
+    <li><a href='../../index.html#tutorials'>Tutorials</a></li>
+    <li><a href='../../index.html#about'>About</a></li>
+    </ul>
+
+<div class="overlay">
+        <div id="table">
+            <button id="closeBar" class="material-icons">
+                close
+            </button>
+            <h1>Python</h1>
+            <div id="scroll">
+            <h3>Basic Python</h3>
+            <ul>
+                <li data-go="../python.html">Introduction</li>
+                <li data-go="../python/basicsyntax.html">Basic Syntax</li>
+                <li data-go="../python/operators.html">Operators</li>
+                <li data-go="../python/variables.html">Variables</li>
+                <li data-go="../python/comments.html">Comments</li>
+                <li data-go="../python/ifelsestatements.html">If/Else Statements</li>
+                <li data-go="../python/loops.html">Loops</li>
+                <li data-go="../python/functions.html">Functions</li>
+                <li data-go="../python/arrays.html">Arrays</li>
+                <li data-go="../python/libraries.html">Libraries</li>
+                <li data-go="../python/colours.html">Colours</li>
+                <li data-go="../python/dictionaries.html">Dictionaries</li>
+                <li data-go="../python/enums.html">Enumerators</li>
+                <li data-go="../python/classes.html">Classes</li>
+                <li data-go="../python/exceptions.html">Exception Handling</li>
+                <li data-go="../python/filereading.html">File I/O Reading</li>
+            </ul>
+            <h3>Pygame</h3>
+            <ul>
+                <li data-go="../python/pygame/setup.html">Setting Up</li>
+                <li data-go="../python/pygame/window.html">Window</li>
+                <li data-go="../python/pygame/images.html">Images</li>
+                <li data-go="../python/pygame/text.html">Text</li>
+                <li data-go="../python/pygame/k-input.html">Keyboard Input</li>
+                <li data-go="../python/pygame/collision.html">Collision</li>
+            </ul>
+            </div>
+        </div>
+
+        <button id="openTable"
+        class="material-icons">
+            arrow_right
+        </button>
+    </div>
+
+<div id="screen">
+<div id="table2">
+        <h1>Python</h1>
+        <div id="scroll2">
+        <h3>Basic Python</h3>
+        <ul>
+            <li data-go="../python.html">Introduction</li>
+            <li data-go="../python/basicsyntax.html">Basic Syntax</li>
+            <li data-go="../python/operators.html">Operators</li>
+            <li data-go="../python/variables.html">Variables</li>
+            <li data-go="../python/comments.html">Comments</li>
+            <li data-go="../python/ifelsestatements.html">If/Else Statements</li>
+            <li data-go="../python/loops.html">Loops</li>
+            <li data-go="../python/functions.html">Functions</li>
+            <li data-go="../python/arrays.html">Arrays</li>
+            <li data-go="../python/libraries.html">Libraries</li>
+            <li data-go="../python/colours.html">Colours</li>
+            <li data-go="../python/dictionaries.html">Dictionaries</li>
+            <li data-go="../python/enums.html">Enumerators</li>
+            <li data-go="../python/classes.html">Classes</li>
+            <li data-go="../python/exceptions.html">Exception Handling</li>
+            <li data-go="../python/filereading.html">File I/O Reading</li>
+        </ul>
+        <h3>Pygame</h3>
+        <ul>
+            <li data-go="../python/pygame/setup.html">Setting Up</li>
+            <li data-go="../python/pygame/window.html">Window</li>
+            <li data-go="../python/pygame/images.html">Images</li>
+            <li data-go="../python/pygame/text.html">Text</li>
+            <li data-go="../python/pygame/k-input.html">Keyboard Input</li>
+            <li data-go="../python/pygame/collision.html">Collision</li>
+        </ul>
+        </div>
+        </div>
+    <div>
+    <div id="content">
+    <!-- banner -->
+    <div id="banner">
+        <div id="btext">
+            <img src="../../img/icon-t.png" alt="">
+            <div>
+                <h1>Variables</h1>
+                <p>CodeStacks - Python</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section">
+        <h1>Abstract</h1>
+        <p>
+            Variables in Python are really 
+            important. They can store 
+            data, but can also be manipulated. 
+            Variables in Python can hold 
+            multiple values, and these 
+            types of variables are called 
+            'arrays'. Variables are 
+            extremely fundamental and 
+            useful when coding in Python 
+            as a whole.
+        </p>
+    </div>
+
+    <div class="section">
+        <h1>Overview</h1>
+        <p>
+            We use variables in Python to 
+            store data in a convenient form. 
+            This form allows us to refer to 
+            it multiple times, and useful 
+            for values that aren't constant. 
+            What are constant values? Well, 
+            they are values that cannot be 
+            changed.
+            <br><br>
+            Variables in Python have a strict 
+            naming logic and are <b>case-sensitive.</b> 
+            That means that variables like 
+            <c>abc</c> and <c>ABC</c> are 
+            considered different, so that means 
+            as long as the caps are different, 
+            the original value won't be replaced. 
+            This is something to look out for, 
+            however, as you can't assume that 
+            <c>abc</c> will automatically 
+            hold the value of <c>ABC</c>, 
+            which it won't, but issues like 
+            these can be easily avoided.
+        </p>
+    </div>
+
+    <div class="section">
+        <h1>Naming Principles</h1>
+        <p>
+            When naming variables in Python, 
+            look out for the following:
+        </p>
+        <br>
+        <ul>
+            <li>Only <c>A-Z</c>, 
+            <c>a-z</c>, <c>0-9</c>, 
+            <c>.</c> and <c>_</c>.
+        </li>
+        <li>They are case-sensitive.</li>
+        <li>Spaces are not allowed.</li>
+        <li>Those starting with 
+            <c>_</c> can't be referred to 
+            later.
+        </li>
+        <li>Any symbols other than 
+            <c>.</c> or <c>_</c> 
+            aren't valid in variable names.
+        </li>
+        </ul>
+<pre><code class="language-python"># Variable Names:
+abc = 1 # Valid.
+ABC25 = 2 # Also valid.
+_var = abc + ABC # Temporary.
+$A&b = 4 # Invalid (syntax error).
+</code></pre>
+    </div>
+
+    <div class="section">
+        <h1>Setting Values</h1>
+        <p>
+            When you set a value to a 
+            variable, you simply just 
+            put an equal's sign in between 
+            the two parts; the left side is 
+            the variable name (rules here), 
+            and the right side is the 
+            desired value you would like 
+            to put in.
+        </p>
+        <br>
+        <h2>Strings</h2>
+        <p>
+            When you want to set the value 
+            to some text, don't make the 
+            mistake of not placing it within 
+            quotations. If you set the value 
+            to a string without the quotations, 
+            then Python will assume that it 
+            is the value contained in another 
+            variable, but not text.
+        </p>
+
+<pre><code class="lang-python">Name = Alice # Invalid
+
+Name2 = "Bob" # Valid String</code></pre>
+        <br>
+        <h2>Booleans</h2>
+        <p>
+            Booleans are just a fancy way of 
+            saying 'true' or 'false' and then 
+            assigning that to a variable (for 
+            example). They are also how 
+            if-statements work, more on that 
+            covered here. Syntax on Booleans 
+            are very specific, requiring them 
+            to be either True or False as 
+            their value. This is specific 
+            as it has to be exactly that 
+            and starting with a capital 
+            letter.
+        </p>
+<pre><code class="language-python"># Booleans:
+var = True
+
+var2 = False</code></pre>
+</div>
+
+<div class="section">
+    <h1>F" Strings</h1>
+    <p>
+        F" Strings allow for <c>print()</c> 
+        commands to have variables inside the 
+        printed string in a nice, clean way. 
+        <br><br>
+        You can easily do it like this:
+    </p>
+    
+<pre><code class="language-python"># Incrementation Example:
+print(f"Hello, {name}!")
+</code></pre>
+
+    <p>
+        The logic of that simply implies 
+        that there's a defined variable 
+        named "name", most likely set by 
+        an input() command. Then the F" 
+        String outputs "Hello,", followed 
+        by whatever is set by the "name" 
+        variable. For example, if the 
+        variable held the string "Alice", 
+        then it would output: "Hello, 
+        Alice!". If it was set to "Bob", 
+        then it would be: "Hello, Bob!". 
+        But those are just examples of how 
+        f"strings work. You can use them 
+        in many ways.
+    </p>
+
+    <br><br>
+    <h2>Variable Embedding</h2>
+    <p>
+        To add variable data to your string, 
+        the easiest solution is to wrap the 
+        variable name in some curly brackets 
+        <c>{</c> <c>}</c>. Python will look at it and grab 
+        the value stored in the variable and 
+        add it to your string in place of the 
+        variable name and brackets.
+    </p>
+    </div>
+
+    <!-- footer -->
+    <div class="section">
+        <h2>CodeStacks.</h2>
+        <p>
+            Learn to code. 
+            <br>
+            &copy CodeStacks, 2025-<span id="year">20XX</span>.
+            <br>
+            All Rights Reserved.
+        </p>
+    </div>
+    </div>
+    </div>
+</div>
+</body>
+<script src="../../index.js"></script>
+<script src="../../code/prism.js"></script>
+</html>

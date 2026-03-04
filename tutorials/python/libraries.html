@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeStacks - Python Libraries</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/code/prism.css">
+    <link rel="shortcut icon" href="/img/icon-f.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=warning" />
+</head>
+<body>
+    <ul class='navbar'>
+    <li class='uri'>
+    <a href='/index.html'
+    ><img
+    src='/img/icon-t.png'
+    alt=''
+    class='site-icon'
+    /></a>
+    <a>CodeStacks</a>
+    </li>
+    <li>
+    <a href='/index.html'><b>Home</b></a>
+    </li>
+    <li><a href='/index.html#tutorials'>Tutorials</a></li>
+    <li><a href='/index.html#about'>About</a></li>
+    </ul>
+
+<div class="overlay">
+        <div id="table">
+            <button id="closeBar" class="material-icons">
+                close
+            </button>
+            <h1>Python</h1>
+            <div id="scroll">
+            <h3>Basic Python</h3>
+            <ul>
+                <li data-go="/tutorials/python.html">Introduction</li>
+                <li data-go="/tutorials/python/basicsyntax.html">Basic Syntax</li>
+                <li data-go="/tutorials/python/operators.html">Operators</li>
+                <li data-go="/tutorials/python/variables.html">Variables</li>
+                <li data-go="/tutorials/python/comments.html">Comments</li>
+                <li data-go="/tutorials/python/ifelsestatements.html">If/Else Statements</li>
+                <li data-go="/tutorials/python/loops.html">Loops</li>
+                <li data-go="/tutorials/python/functions.html">Functions</li>
+                <li data-go="/tutorials/python/arrays.html">Arrays</li>
+                <li data-go="/tutorials/python/libraries.html">Libraries</li>
+                <li data-go="/tutorials/python/colours.html">Colours</li>
+                <li data-go="/tutorials/python/dictionaries.html">Dictionaries</li>
+                <li data-go="/tutorials/python/enums.html">Enumerators</li>
+                <li data-go="/tutorials/python/classes.html">Classes</li>
+                <li data-go="/tutorials/python/exceptions.html">Exception Handling</li>
+                <li data-go="/tutorials/python/filereading.html">File I/O Reading</li>
+            </ul>
+            <h3>Pygame</h3>
+            <ul>
+                <li data-go="/tutorials/python/pygame/setup.html">Setting Up</li>
+                <li data-go="/tutorials/python/pygame/window.html">Window</li>
+                <li data-go="/tutorials/python/pygame/images.html">Images</li>
+                <li data-go="/tutorials/python/pygame/text.html">Text</li>
+                <li data-go="/tutorials/python/pygame/k-input.html">Keyboard Input</li>
+                <li data-go="/tutorials/python/pygame/collision.html">Collision</li>
+            </ul>
+            </div>
+        </div>
+
+        <button id="openTable"
+        class="material-icons">
+            arrow_right
+        </button>
+    </div>
+
+<div id="screen">
+<div id="table2">
+        <h1>Python</h1>
+        <div id="scroll2">
+        <h3>Basic Python</h3>
+        <ul>
+            <li data-go="/tutorials/python.html">Introduction</li>
+            <li data-go="/tutorials/python/basicsyntax.html">Basic Syntax</li>
+            <li data-go="/tutorials/python/operators.html">Operators</li>
+            <li data-go="/tutorials/python/variables.html">Variables</li>
+            <li data-go="/tutorials/python/comments.html">Comments</li>
+            <li data-go="/tutorials/python/ifelsestatements.html">If/Else Statements</li>
+            <li data-go="/tutorials/python/loops.html">Loops</li>
+            <li data-go="/tutorials/python/functions.html">Functions</li>
+            <li data-go="/tutorials/python/arrays.html">Arrays</li>
+            <li data-go="/tutorials/python/libraries.html">Libraries</li>
+            <li data-go="/tutorials/python/colours.html">Colours</li>
+            <li data-go="/tutorials/python/dictionaries.html">Dictionaries</li>
+            <li data-go="/tutorials/python/enums.html">Enumerators</li>
+            <li data-go="/tutorials/python/classes.html">Classes</li>
+            <li data-go="/tutorials/python/exceptions.html">Exception Handling</li>
+            <li data-go="/tutorials/python/filereading.html">File I/O Reading</li>
+        </ul>
+        <h3>Pygame</h3>
+        <ul>
+            <li data-go="/tutorials/python/pygame/setup.html">Setting Up</li>
+            <li data-go="/tutorials/python/pygame/window.html">Window</li>
+            <li data-go="/tutorials/python/pygame/images.html">Images</li>
+            <li data-go="/tutorials/python/pygame/text.html">Text</li>
+            <li data-go="/tutorials/python/pygame/k-input.html">Keyboard Input</li>
+            <li data-go="/tutorials/python/pygame/collision.html">Collision</li>
+        </ul>
+        </div>
+        </div>
+    <div>
+    <div id="content">
+    <!-- banner -->
+    <div id="banner">
+        <div id="btext">
+            <img src="/img/icon-t.png" alt="">
+            <div>
+                <h1>Libraries</h1>
+                <p>CodeStacks - Python</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section">
+        <h1>Abstract</h1>
+        <p>
+            Libraries in Python are an easy 
+            way to access features that are 
+            not built in to normal Python.
+            Examples are <c>random</c> and 
+            <c>time</c>, both of which you 
+            cannot use without importing them 
+            into your Python file first.
+        </p>
+    </div>
+
+    <div class="section">
+        <h1>Overview</h1>
+        <p>
+            To import a library, you use the 
+            <c>import</c> keyword. From that, 
+            you add the name of the library 
+            you wish to import. In the below 
+            example, let's import the <c>random</c>
+            library:
+        </p>
+
+<pre><code class="lang-python">import random
+</code></pre>
+
+    <p>
+        But if you only need a specific part 
+        of a library without importing the 
+        whole thing, you can do this instead, 
+        and as an example, let's use <c>time</c>.
+    </p>
+
+<pre><code class="lang-python"># Time
+from time import sleep
+</code></pre>
+    
+    <p>
+        In this instance, we are importing the 
+        <c>sleep</c> module from the <c>time</c>
+        library.
+    </p>
+    </div>
+
+    <div class="section">
+        <h1>Random Numbers</h1>
+        <p>
+            Since random numbers cannot be 
+            generated in Basic Python, you 
+            can import the corresponding 
+            library, <c>random</c> like so:
+        </p>
+<pre><code class="language-python"># Example:
+import random
+</code></pre>
+
+    <p>
+        Now that we have access to the 
+        <c>random</c> module, we can now 
+        use <c>random.randint()</c> to 
+        generate the number. Because we are 
+        using <c>randint()</c>, you need to 
+        provide a starting integer, and an 
+        ending integer for the range in which 
+        you want to generate the random number 
+        from:
+    </p>
+
+<pre><code class="lang-python"># Random Integer
+import random
+
+num = random.randint(3, 8)
+print(num)
+</code></pre>
+
+    <p>
+        In the code snippet above, we define 
+        two variables to define the start and 
+        end of the range for the random 
+        integer. Then, we call <c>random.randint()</c>
+        and input the two variables. We then print 
+        the end result to the output window.
+    </p>
+    </div>
+
+    <div class="section">
+        <h1>Time</h1>
+        <p>
+            If you need to add a time delay 
+            to your code, like for a countdown, 
+            you need the <c>time</c> library.
+            But this time, you only need to 
+            import the <c>sleep</c> module. 
+            In order import only the <c>sleep</c> 
+            module from the <c>time</c> library,
+            you can do this:
+        </p>
+
+<pre><code class="lang-python"># Importing sleep()
+from time import sleep
+</code></pre>
+        <p>
+            Now that we have access to the 
+            <c>sleep()</c> command, we can 
+            add any number inside it, and it 
+            will pause the runtime code for 
+            the specified amount of seconds.
+        </p>
+
+<pre><code class="lang-python"># Example Usage:
+from time import sleep
+
+name = input("What's your name? ")
+sleep(1)
+print(f"Hello, {name}!")
+</code></pre>
+
+<p>
+    In the snippet above, we store 
+    some user input in a variable,
+    <c>name</c>. Then, we wait for 
+    <c>1</c> second before printing 
+    <c>Hello</c>, and then the value 
+    of the <c>name</c> variable.
+    <br><br>
+    So if you typed in something like
+    "Bob", the output would look like 
+    this:
+
+<pre><code class="lang-plain">Hello, Bob!</code></pre>
+</p>
+    </div>
+
+    <div class="section">
+        <h1>OS and SYS</h1>
+        <p>
+            There are also libraries for 
+            managing what's displayed on the 
+            terminal that your code is outputting 
+            to. Those libraries are <c>os</c> 
+            and <c>sys</c>.
+            <br><br>
+            To use them, you need to add 
+            the following to the top of your 
+            code (technically, it doesn't matter 
+            <i>where</i> it is, but it's good for 
+            readability).
+        </p>
+
+<pre><code class="lang-python"># Importing OS and SYS:
+import os
+import sys
+</code></pre>
+
+    <p>
+        Now, we can impact the terminal 
+        window itself, not just the text 
+        displayed on it.
+    </p>
+
+    <br>
+    <h2>Clearing the Screen</h2>
+    <p>In order to wipe the text that is 
+        currently display on the terminal, 
+        you can do it with <c>os</c>.
+        <br>
+        The thing is, there's two ways to 
+        do it, and it depends on the operating
+        system that you do it on.
+        <br><br>
+        For Windows, you do it like this:
+    </p>
+
+<pre><code class="lang-python">import os
+os.system("cls")
+</code></pre>
+
+    <p>
+        But on every other operating system, 
+        like MacOS, Linux, Unix, etc, you need 
+        to do <i>this</i> instead:
+    </p>
+
+<pre><code class="lang-python">import os
+os.system("clear")
+</code></pre>
+
+    <p>
+        But if you need to run your code on 
+        any platform but you don't know 
+        what operating system someone might 
+        be running it on, you can import the 
+        <c>platform</c> library.
+    </p>
+
+<pre><code class="lang-python">import os
+import platform
+
+if platform.system().lower() == "windows":
+    os.system("cls")
+else:
+    os.system("clear")
+</code></pre>
+
+    <p>
+        What the code above does is 
+        it checks if the operating system, 
+        converted to lowercase is equal to 
+        <c>windows</c>. If it is, then it runs 
+        <c>os.system("cls")</c>, but if it isn't, 
+        then it runs <c>os.system("clear")</c> 
+        instead.
+    </p>
+    </div>
+    <!-- footer -->
+    <div class="section">
+        <h2>CodeStacks.</h2>
+        <p>
+            Learn to code. 
+            <br>
+            &copy CodeStacks, 2025-<span id="year">20XX</span>.
+            <br>
+            All Rights Reserved.
+        </p>
+    </div>
+    </div>
+    </div>
+</div>
+</body>
+<script src="/index.js"></script>
+<script src="/code/prism.js"></script>
+</html>
